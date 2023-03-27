@@ -1,0 +1,163 @@
+7.	Microgrid Communication & Control
+
+
+Communication technologies and data management play an important role in Smart microgrids. These technologies help to place a layer of intelligence over Microgrid’s infrastructure, thereby allowing command and control applications to operate and engage with Microgrid’s assets. In fact, the convergence of Communication Technology and Information Technology with Power System, is what makes a Microgrid smart or intelligent, enabling a host of fundamental applications to emerge.
+
+
+It is interesting to note that although the foundation of Smart microgrids is built upon a lateral integration of its fundamental assets, its smartness and intelligence will be built upon vertical integration of the upper layer applications with lower layer components. For instance, a critical capability such as Demand Response, may not be feasible without tight integration between a variety of middleware, field assets and termination devices placed in various management layers, which provide inputs, as well as get influenced by the real-time load status of the system.
+
+
+7.1.	Command and Control Strategies
+
+
+As discussed earlier, what distinguishes a Smart Microgrid from a conventional Microgrid is the pervasiveness of real-time monitoring, command and control across the nodes of the system.
+That requires relevant microgrid nodes to have the capability of generating real-time data and communicate those with other nodes across the system. Such data would be required to enable control and planning applications, such as EMS, to have access to, and apply appropriate
+ 
+controls, to the relevant nodes of the system, regardless of where these nodes are, or what their functions may be. In other words, monitoring and control within Smart Microgrid system has to be an end-to-end exercise, and encompassing [preferably] all nodes of the network.
+
+
+That requirement calls for command and control strategies, capable of dealing with Microgrid events through localized intelligence. In other words, individual components, such as PCS, batteries, etc, may have their own dedicated management and control intelligence, interfacing with higher level control systems and applications (such as EMS) to receive set-points and inform them of their status and events. That distributed command and control approach relaxes the performance requirements of upper-layer control functions as those only need to be informed of the occurrence of the events and the local actions taken to attend to them. This essentially frees the upper layer control applications from the need to assume the task of time-sensitive and critical control, prescribing and/or implementing remedies for local sub-system issues. For instance, the Energy Management System (EMS) would only be required to deal with overall energy planning and system management issues and would leave time-sensitive and event-driven command and control to local intelligences built-into individual sub-systems and components.
+By default, this notion points to the need for the constituent components of the microgrid system to have the inherent ability to generate, receive, process and analyze real-time data, and make informed decisions and/or attend to their pre-assigned tasks based on the set of local and global attributes available to them.
+
+
+In other words, the smartness of Microgrid is thus determined by the level of closed-loop intelligence which allows the desired level of automation, energy management and protection to
+ 
+be built into the system. This definition is further extended to encompass scaled-down subsets of Microgrid, such as a building, a home or even an electric car as a Nanogrid. Regardless of such differentiations, the basic characteristics of Microgrids is their ability to implement desired Smart Grid capabilities and functions in a well-controlled environment, minimizing the risks associated with the level of maturity, or lack thereof, of the required technologies used in realizing the planned Smart Grid capabilities and functionalities.
+
+
+7.2.	Microgrid System Requirements
+
+
+As discussed earlier, smart microgrid communication systems need to enable end-to-end connectivity and data-exchange capability between different nodes in the system. In that regard, attributes such as security, access, bandwidth and latency requirements of the prevailing functions and applications, such as Energy Management System and Demand Response, will determine the performance requirements of communication systems. That means that the design of the communication system for a microgrid has to allow individual components to use a variety of wired and wireless communication technologies.
+
+
+Nevertheless, regardless of the chosen technology, an optimum communication system should be able to deal with massive bursts of data (on polled or event basis) which components may be expected to receive or transmit. Such information may vary considerably in size and latency requirements. They may include consumption data (with end-to-end latencies in the order of tens of seconds), all the way to other types of time-sensitive information, such as alarms, sample values or over-the-air firmware upgrades which may require bursts of 1 Mbps with end-to-end
+ 
+latencies in the order of a few milliseconds. In other words, these technologies will have to meet certain bandwidth, security and latency requirements, and as such they will be optimal to carry certain throughput and meet certain latency targets.
+
+
+7.3	Microgrid Application Requirements
+
+
+At the heart of a smart Microgrid is the need for timely exchange of information and commands, which requires a robust communication network technology and its associated protocols. The network must connect smart digital systems across the microgrid area with varying data requirements from high bandwidth and low latency applications to low bandwidth and latency insensitive applications with ability to deal with missing data.
+
+
+It goes without saying that there isn’t a perfect network medium that could be regarded as a silver bullet for building a smart Microgrid network, capable of satisfying all stakeholders’ requirements. A complete network could be designed using fiber optic cables, but installation in a wide area becomes prohibitively expensive or impossible. Alternatively, one may design a network using wireless technologies such as WIMAX, Zigbee or WIFI, but some applications will not work well with the higher latency and dropped data packets when there is interference or congestion in the RF spectrum. Other mediums are only suitable for shorter distances such as CAT5 Ethernet which has a 100 meter maximum distance between switches. It quickly becomes apparent that a hybrid system of different network technologies are required to best solve the networking challenges for a smart Microgrid.
+ 
+Traditional IT networks have time synchronization services today which will keep devices time synchronized down to the second, but some of the applications in a power system require much higher quality time sources than is provided in a traditional IT network. Where a traditional IT network may only need to have accuracy down to the second, some power applications such as synchrophasor measurements need to be accurate better than 1 millisecond to compare waveforms at different points in the smart Microgrid. To achieve such a high degree of precision, a GPS clock is used as the primary source for time synchronization in a power system network. To avoid the cost of having many GPS clocks in a single network IEEE-1588 protocol was developed to enable high precision time synchronization over a network.
+
+
+The network is also complicated by the need for bringing live data from remote sensors and meters into the back-office systems and SCADA systems, potentially allowing intruders into systems that normally did not allow external data communications. Several layers of firewalls are required to ensure proper isolation between the field area networks and the back-office systems.
+
+
+A primary attribute of any microgrid is having local generation, and if we are using renewable generation sources then we will need to have good forecast and models of when the renewables will be online and how much power will be available, and how much energy will be produced over several time scales. Having this data is essential for optimization systems to make feasible plans for when the microgrid should export energy, import energy, store energy, and manage consumption. We have local weather stations that give real time data on wind speed and solar irradiance, but the forecasting data is downloaded from the Internet. For this reason we need to
+ 
+have our microgrid network connected to the internet, and additional firewalls to protect the system from intruders.
+
+
+On the other side of the energy generation forecasts are the load forecasts. This typically is a combination of historical consumption data and possibly a future looking forecast using data that can give approximations of how much energy is needed, such as to support the electric car reservation system. Moreover, in some cases the same renewable generation data may be used to calculate how much energy would be available to serve microgrid loads.
+
+
+Furthermore, distributed protection functions require a network to transfer state information that requires very low latency to do protection. Normally the requirement for protection is to respond within 3ms. The two networking mediums that are suitable for this level of protection are Ethernet over copper or Ethernet over fiber optic; the wireless technologies have much higher latency and thus would not provide adequate protection.
+
+
+In a microgrid, the inverters and converters are in control of making the energy flow, and those inverters need a network to connect with the higher level controller to command the inverter and converters. The speed at which these commands get to the inverter are not required to be as fast as the protection functions. The changes to the settings for the inverter and converters may happen at a frequency of less than 1 time per second and may happen at lower frequencies of 1 time per minute. Wireless options would be suitable for such a connection, but Ethernet over copper is a suitable choice if the distances between the systems that command the inverter are within the 100 meter distance reach of Ethernet over copper.
+ 
+
+
+The battery storage system needs to communicate with the battery charge controller, which is normally part of the inverter and converters. The battery storage system needs to let the battery charge controller know the limits for charging and discharging the battery, as the battery approaches its full charge status, it can no longer accept a full speed charge. Similarly, when the battery gets close to being fully discharged, it is no longer able to supply the same amount of current. The network requirements for this are similar to the other data that is sent to the inverters, and could be done via wireless or wired connections.
+
+
+As discussed earlier, the energy management system is the central component in a smart microgrid which needs to communicate with many components. It needs to get the renewable forecasts, as well as the load forecasts, to plan when and where to use the energy. The system also needs to see near real time consumption data to make decisions when the plan doesn’t match the actual consumption or generation. With the amount of data sources it needs to communicate with, it is advisable that the system uses a wired network solution.
+
+
+Smart loads are fundamental components of a smart microgrid, allowing the energy management system to command them to use less or more energy. As such, these smart loads need to receive commands from the energy management system to control their energy consumption. They generally do not need high speed, low latency communications. This means wireless communications would be an acceptable method to communicate with these devices. In a home environment this could be on WIFI or Zigbee. In a campus environment this could be done over WIMAX.
+ 
+
+
+In an environment where the loads are not controllable via digital signals, controllable relays can be installed to disconnect loads. Sometimes, it would be critical to reduce microgrid loads to maintain the smart microgrid stability in the present or ensure its viability in the near future. The networking to the controllable relays can be done wirelessly. However, to ensure that target loads get turned off, when needed, it may be advisable to use a hardwired solution for this if it can be done easily.
+
+
+7.4	Campus Communication Networks
+
+
+BCIT has deployed several communication networks for smart grid research. Each network is tasked with providing relevant services for specific functions. And given the fact that each function may have its own specific requirements, the technologies are chosen on the basis of their ability to provide the required service optimally and reliably. Shown in Figure 7.1, these communication networks have been deployed to test the reliability, performance and suitability of the technology as they would fit into different portions of a smart Microgrid.
+ 
+
+
+
+
+
+
+
+Shown in Figure 7.2, a Zigbee mesh network was deployed in the campus residence buildings, an area of the campus that has a dense population with lots of WIFI devices. The WiFi system utilizes the same RF spectrum as the Zigbee network. This mesh network is being used to transport meter data from smart meters for the residence buildings back to the AMI system.
+Zigbee networks are being utilized in a smart grid primarily as the home area network. In a smart home of the future the Zigbee network may be used by the major appliances in the home to participate in demand response programs. This would typically include controlling the thermostat for heating/cooling, controlling the delay timer for the dishwasher, restricting when the freezer decides to go through a defrost cycle, limiting the energy used by the clothes dryer and the range, while not impacting the home owners ability to live a normal life.
+ 
+
+
+
+WIMAX is a longer range networking technology that has also been deployed at BCIT, it is designed to be much more robust than a traditional WIFI network, where encoding and encryption settings make it more secure and reliable. The encoding adds additional resilience to bit level transmission errors, and is able to correct those errors without requiring the higher level TCP/IP to retransmit packets. Bandwidth can be allocated to separate streams to ensure the quality of service for critical applications. Shown in Figure 7.3, BCIT’s 5.8 GHz Network has been configured to connect all the substations across the campus to the AMI network, and test new substation communication standards including IEC-61850 across a wide area network.
+ 
+
+
+
+
+
+
+The primary long range communication is Ethernet over fiber optic cables. The bandwidth available on a fiber optic cable is almost unlimited, with the ability to use multiple light frequencies to share the same fiber optic strand. Using fiber has the best latency of any of the technologies used, and is most suitable for critical protection functions that are latency sensitive.
+ 
+Nevertheless, and as stipulated in Figure 7.4, WiMax has the potential to be configured as a hot redundant communication system in support of Campus’ fiber network. This is not the case at the moment in BCIT’s Microgrid system. However, the idea would be interesting to pursue in the future.
+
+In summary, BCIT’s hybrid communication systems are requires to BCIT smart microgrid applications. These applications include
+ 
+•	High resolution time services
+
+•	Substation Automation
+
+•	Protection and control
+
+•	Energy management
+
+•	Energy Generation Forecasting
+
+•	Energy Demand Forecasting
+
+•	Realtime monitoring
+
+
+The high resolution time service on the BCIT smart microgrid utilize a GPS timeserver that acts as a local timeserver for all windows computers on the network, and our network switches support IEEE-1588 time (PTP) . This is suitable for our hardwired connections. PTP does not work over wireless links as the latency and jitter are not reliable to determine the delay of transmission. The network switches have specific requirements to make PTP work. They need to understand the exact delay for each interface, enabling them to adjust the time delay information inside the packets. That means standard fiber SFP modules cannot be utilized; hard wired modules that have specific delay times are used only.
+
+
+BCIT Microgrid’s substation automation networking utilizes either Ethernet over fiber or Ethernet over copper depending on the equipment’s interfaces options. The networking is unique as it utilizes IEC-61850 GOOSE which runs over Ethernet layer 2 and does not use TCP/IP. Instead it uses its own frame type and uses unacknowledged transmission. The protocol deals with packet loss by retransmitting values on a regular basis. The data being transmitted is more like a radio than a point to point communication system. The transmitter defines the broadcast
+ 
+address it will send to, and any equipment that wants to receive the information is programmed to listen for those broadcast messages. In this scenario it makes no sense for a receiver to acknowledge that it received the packet. When there is a critical issue, like the voltage goes out of range, the relay will transmit the new data immediately instead of waiting for its regular scheduled transmission, and then will proceed through a series of back off retransmissions until the delay between packets is back to its normal retransmission time. Since this data is not within an IP frame the data cannot be easily routed beyond the local Layer 2 network.
+
+Protection functions need high speed and low latency for proper operation. For that reason the equipment that is participating in protection functions are connected via Ethernet over fiber or Ethernet over copper. In the case of the relays which reside in our receiving stations, required to trip on voltage or frequency issues from the BC Hydro grid, a 48V normally high hardwire connection has been implemented to act as the failsafe solution to disconnect OASIS when the protection equipment trips. We also have an IEC-61850 GOOSE message that will be sent from our receiving station. What is interesting is that experiments have shown that this trip signal has been recorded as arriving 17ms faster than the hardwire trip signal. The GOOSE message has been configured as not failsafe which means the fiber optic connection could be unplugged and it will not cause the OASIS system to isolate itself. Once there is more confidence in this technology we would like to see this configuration changed to make the fiber optic connection set as failsafe.
+
+
+The control aspects have different networking needs, depending on how critical the control messages are to having a stable system. The more interconnections a component has the less desirable it is to use wireless connectivity to it, but other individual components may be deemed
+ 
+less critical and thus more suitable for wireless communications.
+
+
+The energy management system is one of those components that needs a very reliable communication path. It must communicate with many components, using several protocols, some of which are very bursty in nature such as IEC-61850 GOOSE which could saturate a wireless connection for short periods of time.
+
+
+Solar irradiance forecasts are downloaded for the OASIS system from UBC on a daily basis, a 3 day forecast is used in conjunction with the models for the solar panels installed at BCIT to produce an energy generation forecast.
+
+
+The primary load for the OASIS system is currently a cluster of EV charging stations. There are 2 sources of forecast data that is used for generating the load forecast for EV charging. The primary source is using historical EV charging data, and secondary source of data is from an EV charging reservation system.
+
+
+Moreover, there are electrical meters installed at several locations in the OASIS network to monitor energy, power, harmonics and other valuable data about the smart microgrid. Realtime data from these meters are utilized in the energy management system to ensure the existing plan is matching reality. 
+
+
+
+Finally, and as pointed out earlier, reliability and performance of the communication networks are some of the most critical factors which determine the reliability, functionality and performance of a Smart Microgrid System. As discussed before, the smartness or intelligence of a microgrid is a function of the degree of integration between upper layer command and control systems with microgrids’ assets and components. This degree of integration is determined by the reliability and performance of each and all communication links which need to be established between different actors in energy transactions within a microgrid. In other words, for each transaction to succeed, the actors have to be guaranteed a reliable connection with optimum performance to their target components. Ideally, this may mean:
+a.	more than one communication medium
+
+b.	more than one communication protocol
+ 
+c.	and more than one path between the communicating parties.
+
+That may be an acceptable proposition for a lot of Mission Critical applications. However, in our campus microgrid application, we could not justify implementing (a) and (b). Nevertheless, the design team managed to realize (c). This is shown in Figure 7.5.

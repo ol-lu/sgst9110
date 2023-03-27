@@ -1,0 +1,280 @@
+2.	Smart Grid System Integration	
+
+Security of energy supply, energy efficiency, environment and economy have encouraged political leaders, scientists, and the public to recognize the need for major overhaul of the power industry in such diverse areas as technology, business model, standards, regulatory issues, consumer psychology and education.
+
+
+It is therefore not surprising to see that Smart Grid related blogs, newsletters and conferences have endured numerous debates and discussions around the issue of grid overhaul thru “integration” of Smart Grid capabilities and functions into the existing grid. However, it seems that debates on approach, methodology and sequence of what needs to be done is not informed by a holistic view of system integration and a methodology for developing Integration Maps based on Utility’s Smart Grid Strategic Roadmap. This means that in the haste of “getting it over and done with”, numerous projects get started without a clear strategy and roadmap for Smart Grid system integration.
+
+
+Faced with diverse technological, organizational and business issues, adversely affecting their bottom line, the utility companies are contemplating immediate changes (and/or upgrades) to their technologies, business processes and organizations. However, at the same time, the realities of insufficient resources, regulatory impediments and technological issues have prevented the development of concrete plans and concerted actions in this regard.
+
+
+A closer look at mainstream discussions within the utility industry reveals that despite consensus on the need to change, there is no agreement across the board in any given utility on Smart Grid
+ 
+Roadmap and Integration Map. The absence of industry-wide standards and blue prints for Smart Grid’s integration has further compounded the issue. That means that Smart Grid development plans in most utilities is bound to be driven by the silo mentality of the constituent parts of the utility organization, according to which the Generation folks tend to push for expanding generation capacity thru integration of renewables, while Transmission folks opt for expanding transmission capacity thru automation, and last but not least the Distribution folks to plan for integration of new assets, technologies and intelligence on the downstream side of the network. Furthermore, and given the fact that each group has traditionally been exposed to certain vendors and technology providers for their respective silos, they tend to regard the technologies and solutions offered by those vendors as the answer to much larger system wide problems.
+Problems, which by default, transcend the confines of a single silo in a utility environment. That means that the adopted solutions in each silo tend to be meaningful within that silo and may not integrate with solutions adopted by other silos for a cohesive system level solution to utility’s system level problems.
+
+
+The situation is further complicated by the diversity of views, interests and approaches advocated by vendors and technology providers in the field. Influenced (and often constrained) by their core competencies and technologies, each vendor defines the problems, and therefore the solutions, influenced and informed by their technologies and products. One should not be surprised to hear different suppliers put different spins on basic concepts such as Distribution Automation, or Demand Response, etc. The irony is that they are mostly sincere in what they are advocating. The issue is whether their prescription is the Holy Grail of what is needed to solve utility’s Smart Grid Integration puzzle. This seems to be a re-enactment of Rumi’s “Blind Men
+ 
+and The Elephant” story. Everyone has their own understanding of what this creature is, based on what part of it they have managed to touch. The absence of sight (and/or light) has convinced each and everyone of the righteousness of their belief, undermining the fact that Smart Grid’s system wide issues, requires all its constituent parts to work together and materialize a collective strategy of what needs to be done. In Rumi’s words; “If each of us held a candle there, and if we went in together, we could see it”.
+
+
+Nevertheless and despite the diversity of views which industry pundits may have, resulting in no clear path forward, the electricity grid may find it difficult to sustain the status quo. It has no better option than to change and adopt different modalities and functions consistent with the realities of the sector. That is why at the national level in North America, the US administration, as well as Canada’s federal government, have introduced major funding programs to support development work required to facilitate the roll out of Smart Grid; a constituent component of nation’s critical infrastructure, which need to be more reliable, efficient and capable of exploiting and integrating different sources of energy.
+
+
+However, the gap between where the industry is today, and where it needs to be tomorrow, is quite wide. The electricity grid in North America, and across the world, has not witnessed a systemic adoption, and planned integration, of new technologies, business processes, tools and standards in its major operations. In particular, the power distribution arm of the utility industry in North America has seen very little, if any, improvement in socio-economic approaches to energy distribution, consumption and conservation. The electricity system continues to operate as a one-way system, in which primary fuels are converted into electricity, pushed down the
+ 
+transmission pipes and into distribution plumbing without having real-time information on consumer loads and demand, consumption patterns and distribution power quality.
+
+
+The electricity grid of the future, or the Smart Grid, is expected to turn the electricity grid into an integrated power & information highway, where stakeholders (consumers & producers alike) are empowered to engage in a variety of service transactions. Conservation, reduction of industry’s carbon footprint, diversity of supply, integration of renewable sources of energy, distributed resources and co-generation will be the hallmark of the Smart Grid.
+
+
+Moreover, given the scale of what needs to be done, the overhaul of the North American Electricity Grid can only materialize through public and private partnership. A quick review of the goals of this partnership charts an exciting path forward. A path marked by the need for inter- disciplinary and multi-disciplinary work into not only technology, but also consumers’ behavior, business processes, enterprise organizational issues, utility revenue models, interoperability standards, system topologies, system integration, etc. The nature, scope and dimensions of such work requires a North American effort and an integrated approach to ensure mobilization of diverse technological and scientific talent across North America to address the most pertinent issues which will determine the quality of life for this generation and the next across the globe.
+ 
+
+
+
+2.1.	Utopian Vision
+
+As is customary in the real estate industry, the precursor to the start of every development project is an artist’s impression of the final product. Smart Grid, as envisaged by many, is not immune to such perceptions. That is what one can see in Figure 2.1. The figure is essentially a utopian vision of what Smart Grid is desired to be; a collection of diverse sources of energy, integrated with low-emission power plants, hydro power stations, energy storage facilities, interacting and communicating through super-bandwidth communication technologies. This wishful picture assumes that all assets, domains, actors and technologies coexist in full harmony and under transparent protocols, harmonized standards and compatible topologies. Unfortunately, that is far removed from the reality of the situation we are dealing with today in North America, and across the globe.
+ 
+
+
+As discussed, the point of departure on the path to Smart Grid and the particular set of Smart Grid capabilities which each utility may want to achieve would not be the same across all jurisdictions. Having said that, and regardless of utility’s current baselines, operational priorities and organizational abilities to devise Smart Grid System Integration maps, the ideal way to approach Smart Grid System Integration is to analyze each Smart Grid capability in terms of its core decision making and “data-customer/command-supplier” interface requirements. That analysis will identify to which domain such functions would belong, which layer they will have to reside or be attached to, and what their data processing, command and control, interface protocol and communication requirements would be.
+
+
+The reality is of course that Smart Grid cannot and will not be a “greenfield” exercise. Smart Grid will materialize through incremental improvements of an already existing fully operational machine. In other words, Smart Grid will emerge from coordinated and well-planned introduction of new technologies, capabilities and components into the existing grid, without jeopardizing its integrity and availability. And in order to do that, we need to chart a clear and pragmatic path from the realities of today’s grid to the desired grid of tomorrow.
+ 
+
+
+
+2.2.	Conceptual Model
+
+In order to demonstrate the complexity of such interactions within the framework of Smart Grid, NIST (National Institute of Standards and Technology) produced a much more realistic view of Smart Grid. Shown in Figure 2.2, Smart Grid of the future is represented as a collection of Domains (where specific transactions take place) and Actors (who initiate and perform those transactions) and Networks (which comprise of pathways required to connect actors and assets). NIST’s Conceptual Model attempts to provide a more refined view of Smart Grid. A view which lies somewhere between the two extremes of Utopian impressions of Smart Grid and a Utility Integration Map. Its significance is in the fact that it does not distance itself from the reality of utility situation on the ground. The model takes the hierarchical architecture of utility’s existing system, comprising of Bulk Generation, Transmission and Distribution, and adds on top of those domains new Domains, Networks and Actors which individually and collectively embody the
+ 
+new capabilities, features and functions, dubbed as Intelligent Grid or Smart Grid.
+
+
+Moreover, NIST’s Conceptual Model does not prescribe or advocate any particular system topology and integration map. All it does is that it defines a place holder for new actors, and their associated domains and networks, who could potentially initiate and/or participate in new transactions and involvements with the utility system. New actors could reside in the “Markets” domain, buying and selling bulk energy, or they could play the role of a Regional Transmission Operator, selling transmission capacity, or they could act as a Service Provider, helping end- customers achieve energy conservation. If empowered, Actors in the four new domains, namely Markets, Operations, Service Providers and Customer, could each provide the legacy grid (comprising of Generation, Transmission and Distribution) with unprecedented capabilities and functions. Applicable regulatory regimes in each jurisdiction will facilitate or impede the roles which such actors may be able to play. For instance, regulations may not allow the utility, or a 3rd party service provider, to engage customer owned appliances for the purpose of load reduction or curtailment. Similarly, privacy issues in most jurisdictions may not be conducive for Data Mining features applied to Customer’s consumption data.
+
+
+Nevertheless, NIST’s Conceptual Model provides a realistic view of the constraints associated with the current legacy system, as well as a pragmatic array of new features and function which, if allowed, could add tremendous value to the existing Grid. At the same time, the model has traces of prescribed strategies for the evolution of the exiting grid. For example, in addition to projecting the fact that bulk generation will be with us for the foreseeable future, it incorporates distributed generation functions within both MV (Medium Voltage) and LV (Low Voltage)
+ 
+domains. And given the fact that most probably the predominant source for distributed generation shall be renewable sources, which are intermittent in nature, the model incorporates Electric Storage in both MV and LV domains.
+
+
+The next level of refinement in such model requires accurate specification of Use Cases. Although no standard definition of Use Cases are yet available, Use Cases generally capture the narrative of transactions which could be implemented within such an environment. For example, a third party billing services provider may need to initiate a Use Case to gather Consumption data from Utility’s Smart Metering system, and gain access to contractual agreements between the energy service provider and the customer, and also obtain the applicable rates and tariffs for each timeslot within the billing period. Given the fact that such a Use Case involves multiple Actors, multiple Domains and multiple Networks, the Use Case has to describe clearly which actor initiates the transaction, who the recipient (s) of the transaction is, and what type of data and/or command will be exchanged between the actors, when and for what purpose. The narrative account of each transaction enable the system designers to identify the exact specification of what communication technologies, what command & control algorithms and what type of processing would be required to execute the intended Use Case. The collection of such Uses Cases enable the Utility to finalize its Functional mapping of Smart Grid features and functions into its existing Legacy Grid infrastructure.
+ 
+
+As mentioned, each Use Case attempts to describe what actors, assets and tasks are required to realize specific functions. Figure 2.3 is yet another attempt to map select Smart Grid functions onto the existing Legacy Grid and identify what assets are required for each function. It shows for example that Demand Response and Dynamic Pricing are functions which require the involvement of Utility’s upstream assets (including Generation, transmission, Control Infrastructure, Communication Technologies, etc) down to downstream assets (including Receiving Stations, Distribution Substations, Smart meters, etc) all the way to customer loads. It goes without saying that in each and every of such functions, different Use Cases could be defined to capture various operational aspects, as subsets of those functions. Furthermore, the significance of this representation is that it provides a high level view of data/communication requirements for each function. This means that for example the data type, throughput and response time required for transaction associated with the “Asset Management” function will be
+ 
+quite different to the requirements defined by the transactions associated with “Self Healing”.
+
+
+2.3.	Functional Mapping
+
+Fig 2.4 is an attempt to take Smart Grid functions of Fig 2.3 and map it across different layers of a fully integrated Smart Grid System. In such an approach, Smart Grid functions are seen as cutting across multiple layers of utility structures, including but not limited to corporate, engineering, field operations and distribution systems. This approach turns utility’s traditional silo structures on its head, as it traverses organizational boundaries for efficient and cost- effective realization of target Smart Grid functions. What is critical in this approach is not how a particular function needs to be realized, but where it belongs as an entity providing other entities in its vicinity with services for which it is designed. Association with a given layer would then determine the performance metrics of the assets which are needed to support the efficient
+ 
+operation of that capability.
+
+
+Moreover, the layered approach attempts to identify the nature of each layer in terms of the dominance of data processing and communication technologies versus utility’s traditional assets. This does not necessarily mean that a layer that is dominated by data processing does not depend on communication technologies or other existing utility assets. By its nature, each Smart Grid capability may have to rely on all three constituent components of Smart Grid, i.e. power systems, telecommunication and information technology.
+
+
+Furthermore, the layered approach embeds within it the notion of temporal and spatial requirements of each layer. More stringent requirement for access to real-time data would place a layer closer to layers which produce such data and vice versa. In other words, the proximity of layers to each other is directly proportional to their interface and data/command exchange requirements. As an example, the EMS and VVO/CVR layers have to be in close proximity to each other and to the field assets, with which they would have a direct, real-time and unimpeded data exchange relationship. The same is not true for the Billing layer which could be placed further away from, and without a need for real-time connections to the field assets.
+
+
+It goes without saying that not all functions within each layer need to be integrated at the same time. Each utility could pick and choose one or more functions from each layer and decide when and how they need to be realized. However, regardless of the integration plan for each function, what is critical is to understand which layer it would belong to, and as such what its data processing, command and control, interface protocol and communication requirements would be.
+ 
+That would ensure that the architecture of the system, the communication topology, the adopted technologies and the associated protocols are chosen in such a way that they would lend themselves to future integration of new functionalities and capabilities. That would be the only way to ensure that the gradual transition to Smart Grid could be managed without excessive re- engineering and expensive overhauls.
+
+
+As discussed, each utility’s enterprise function places a particular set of requirements on different layers of the system in terms of its vital specs, such as data structures, protocols, security regime, latency, throughput and last but not least interactions with the actual assets. In reality, of course, applications could and should reside where their function is required; i.e. some may exist within a substation, some in the utility back-office or on the enterprise bus.
+Nevertheless, and regardless of which environment they are attached to, each application has to have the ability to communicate seamlessly and efficiently with relevant system nodes as and when required. For instance, an Asset Management application has to communicate with all relevant assets assigned to it from different domains of generation, transmission and distribution.
+
+
+As an example, a utility that intends to first roll out its Smart Meters, with the intention of subsequently integrating an Asset Management application over its vital system assets, has to ensure that the AMI system it is integrating will lend itself well (as a set of distinct assets) to seamless integration with the Asset Management Application which it will be rolling out in the future. It goes without saying that it would not be acceptable to have patchworks of individual asset management tools for different categories of assets. In other words, no utility would be happy using an asset management tool for its smart meters, another for its relays, switches, re-
+ 
+closers and protection components, and yet another for its transmission equipment. As such, one would expect that a major requirement for the selection of any AMI solution would be its ability to interface with existing or future Smart Grid functionalities, enabling on-demand or event- based reporting of health, configuration, settings and maintenance schedule of all AMI assets, including meters, head-ends and communication equipment. Similarly, a utility which is planning to implement Dynamic Pricing and Time-of-Use tariffs in the future, has to ensure that its AMI system is capable of handling and/or relaying such real-time information with system’s relevant points of termination.
+
+
+The approach advocated in Fig 2.4 is unfortunately not the norm. One may suspect that the majority of utilities will attempt to integrate Smart Grid functions with their operations, starting at two extreme ends of the system hierarchy; i.e. at the bottom of the chain through roll-out of AMI systems, and at the top of the chain through adopting and integrating new enterprise bus functions. That approach is understandable and very much in line with the current constraints of the utility’s assets and organizational structures. In fact, the early attempts to modernize the system had to take into account the realities of a highly compartmentalized system and operational hierarchy, tasked with delivering a critical service to their customers, while meeting the challenges most utilities are grappling with.
+ 
+
+
+Fig 2.5 depicts the approach utilities in general have taken in their integration of Smart Grid functions. The point of entry of new functions into the hierarchical structure of the utility system has been at the interface with customers (e.g. Smart Meters), plus their associated support functions within Enterprise Bus (e.g. MDMS). Patches of plumbing to connect the two ends of the function (e,g. the required communication system to support the capture and exchange of data for the purpose of billing and revenue management) is thus inserted within the appropriate ICT layer of the system.
+ 
+
+The question which utilities have not answered here is what other Smart Grid capability should the chosen AMI technology support? The current integration of AMI systems across many jurisdictions in the world assume a disjoint utility network (assuming such networks exist at the lower layers of the distributions system, which is not often the case), parts of which could conveniently be bypassed. As shown in Fig 2.6, what typically happens in such installations is that Smart Meters are grouped into a LAN (Local Area Network) type of association (as meshed or otherwise), and exchange their data/command (through RF or PLC links) with a DAU (Data Aggregator Unit) which is installed on a pole top in their vicinity. The DAU would then employ a dedicated communication link (often proprietary wireless protocols) to exchange such aggregated data/commands with an MDMS (Metering Data Management System) within Utility
+ 
+enterprise bus. This means that the specification of the constituent components of the system is therefore optimized to ensure data exchange between Smart Meters and their associated MDMS residing within Utility’s core network. The AMI system as such is not only oblivious to anything that happens in between, but it also has no provisions to handle or carry any other information or data, however critical or important such data may be for other Smart Grid functions to be rolled out in the future. That simply means that important sensory data and information produced at the downstream side of the network, which may be critically required by middle layers of the system, bypass such layers and end up in the upper layers of the system for a specific function and/or purpose (e.g. Billing), and as such do not contribute and/or enable future Smart Grid functions which may benefit from access to such data.
+
+The problem is that even if the utility desires and/or plans to have all its Smart Grid layers across its networks, fully conversing and exchanging data and commands, it has to deal with the larger impediment of having no standards and protocols to support seamless communication and data exchange across system layers. A closer look at Figure 2.7 demonstrates the multitude of standards and technologies which compete to dominate each layer of a typical utility smart grid system. The reality of the situation is that today, components across different domains, even those within the same domain, use incompatible technologies and standards for integration and communication. That makes it almost impossible to integrate different layers of the system without major overhauls or re-designs of the network.
+
+
+
+
+
+Having given up on the industry to put its own house in order, user groups across many domains have sprung up with the mandate of harmonizing these disparate standards. The spaghetti diagram of Figure 2.8 demonstrates the complexity and tediousness of this exercise. Among
+ 
+these, IEC’s TC57 architecture, shown in Figure 2.9, may have the best chance of success as it commands larger participation by the community and a much more extensive repository of different standards which could be upgraded and/or improved to fit the bill.
+
+
+Having said that, no one can predict with any certainty when and how such harmonization efforts would yield the desired results. Until then, all claims made to justify investments in AMI systems, exemplified in Figure 2.10, would be questionable. Nevertheless, given such impediments against systemic system integration, one would certainly hope that utilities’ quest for modernization of their infrastructure would not come to a screeching end as utilities would no doubt attempt to integrate further Smart Grid functionalities based on their particular priorities and roadmap. And at this point in time, it seems that such integration has to be done on a case by case basis.
+ 
+
+
+
+
+
+
+To illustrate this issue further, let’s discuss the implementation issues of a typical Smart Grid function which many utilities regard as a priority. One such function which a lot of utilities intend to implement in short order is Volt/VAR Optimization (VVO) and Conservation Voltage Reduction (CVR). DOE’s recent studies in energy conservation across the US indicated that CVR functions integrated across less than half of US feeders could potentially yield more than 2% demand reduction on the US electrical system. In fact, it has been suggested that many utilities regard VVO/CVR as a priority to realize on critically congested feeders of their system. Claims have been made that the ROI on VVO/CVR integration are 6 to 1 with a pay-back period
+ 
+of 2 to 3 years. That is a great incentive to regard investment in advanced VVO/CVR as the next item on the Integration Map of many utilities after AMI.
+
+
+Prior to AMI, the VVO/CVR function in distribution substations (if at all existed) used an statistical aggregated profile of feeder load to determine the settings and configurations of Cap Banks, Tab Changers, Voltage Regulators, etc to correct the feeder’s power factor and also ensure compliance of voltage gradient across the entire feeder from substation to the last customer with ANSI/IEEE requirements. Given the fact that no real-time information of the actual voltage samples across the feeder was available, the settings and configurations for such VVO/CVR assets were either ineffective or inefficient.
+
+
+The advent of AMI changed that situation. Engineers in charge of planning for new VVO/CVR functions saw the opportunity of using real-time V/I/PF (Voltage, Current and Power factor) sample values from Smart Meters at each customer node to build a realistic and accurate real- time view of the load profile across any given feeder, and as such optimize VVO/CVR settings based on accurate voltage gradient across the feeder, the climatic conditions and Time-of-Use. Such approach was named Adaptive Real-time VVO/CVR.
+
+
+To implement Adaptive Real-time VVO/CVR, two approaches were considered. One relied on capturing Smart Meters’ sensory data through an interface with MDMS in the back-office, and then run VVO/CVR algorithms on powerful enterprise servers using the network model of the distribution system, and finally transfer the new settings to the field VVO/CVR assets through the SCADA system. In other words, VVO/CVR functions is split into a Client-Server
+ 
+configuration, with the server operating in the back-office, and relying on MDMS databases to continuously calculate new settings for VVO/CVR clients in the field and transfer new configurations to such assets through the SCADA system. This approach is called Centralized VVO/CVR Control.
+
+
+
+
+The Centralized VVO/CVR Control seemed quite attractive at first as the availability of accurate network models, combined with adequate processing power on the enterprise bus and access to DMS system could result in highly effective settings for VVO/CVR assets. However, further studies by researchers at British Columbia Institute of Technology (see Figure 2.11) indicated that VVO/CVR functions could be a lot more efficient (and less costly) if on-demand sample values of V/I/PF from bellwether smart meters could be made available much more frequently than what current AMI systems are capable of providing through their MDMS interface. This required VVO/CVR algorithms to be processed locally within each substation, using local sensory data associated with each individual feeder. This approach is called Decentralized
+ 
+VVO/CVR Control.
+
+
+Although research in Decentralized VVO/CVR algorithms is ongoing, early results indicate that a decentralized approach is more efficient and cost-effective for such applications. The difficulty in realizing Decentralized VVO/CVR control strategy is that although it requires the AMI system to supply it more data more frequently, as a substation-based function, it has no direct access to the AMI system. This means that such data have to be extracted from the MDMS system (on the enterprise bus) and transported down to the substation through the SCADA system. The issue there is that current AMI systems (which directly interface with an MDMS system in the back- office) are not typically designed to supply such magnitude of real-time data from the field to the MDMS without the risk of network congestion. Secondly, most SCADA systems are incapable of transferring such massive amount of time-sensitive information from the back-office to the field devices without depriving other critical functions of access to their allocated bandwidth.
+And thirdly, given the fact that the VVO/CVR function is feeder-bound (i.e. its required inputs and outputs are all local), there is very little rationale in involving upper-layer enterprise functions for its operation.
+
+
+This example is a clear indication of a how critical Smart Grid Integration Map would be to the realization of Smart Grid. If utility’s integration map fails to accommodate access to time- sensitive data for upper-layer based Smart Grid functions, utilities would either have to give up implementing future Smart Grid functionalities, or expose their valuable assets (in this case communication systems) to hauling time-sensitive data back and forth across various layers of their ICT hierarchy and therefore risk system inefficiency and “by-design” failure.
+ 
+Another example of the criticality of forward-looking Smart Grid Integration Maps is the requirement to achieve tighter and more meaningful interfaces with customer-based assets. It is believed that in the not too distant future, substation based VVO/CVR functions need to extend their reach beyond Smart Meters and include a level of coordination (or even command and control of) customer side generation assets and loads.
+
+
+
+
+As depicted in Fig 2.12, such assets would include rooftop PV modules and Electric Cars. In fact, recent reports about the negative impact of uncoordinated rooftop solar cells on the stability of feeders’ voltage levels are quite discouraging. The unpredictable and intermittent behavior of such distributed generation assets could not entirely be mitigated with utility field assets (e.g.
+Cap Banks). And even if such costly assets could effectively be used to help stabilize voltage levels, their useful life span (and health) could be considerably compromised through these frequent anomalies (e.g. voltage levels pushing outside ANSI band due to customer’s rooftop
+ 
+PV’s intermittent generation).
+
+
+The severity of voltage stability issues with Electric Cars in their V2G (Vehicle to Grid) mode may be far less in comparison with rooftop PV’s, but still an issue for which utilities need to allocate adequate provisions. Although, EV Car manufacturers may not enable V2G functionality for their cars for the foreseeable future due to their concern on the cost of battery warranties, Utilities need to plan and be ready for such issues should V2G become a reality.
+
+
+What is interesting is that both aforementioned threats could be converted into opportunities for the utility if appropriate provisions are made into the utility’s Smart Grid Integration Map to take advantage of the availability of such downstream assets and integrated them with substation- based future Energy Management Systems. Depicted in Fig 2.12, the EMS system incorporates various command, control and processing functions using global system attributes and local feeder data to configure ALL of its assets (inside and outside the substation) to achieve its energy management goals.
+
+
+Obviously, the requirement which such level of integration place on the AMI system is even more serious than the previous example. Here the AMI system should work as the conduit of communication and coordination between substation-based EMS engine and customer-owned Co-Gen resources, placed behind the meter. As such, it would be critical to ensure that Smart Grid Integration Maps require AMI systems to support such functionalities without major engineering and overhaul. As discussed earlier, a forward-looking Smart Grid Integration Map is critical for the realization of Smart Grid. And given the cost involved in integrating new
+ 
+technologies and functionalities into the existing grid, Smart Grid Integration Map could prove to be the Savior or the Achilles Heel of Utility’s Smart Grid program. In making that judgment, every Utility has to review the operational requirements of its medium and long term Smart Grid functions and determine if its Smart Grid Integration Map supports seamless transition from where they are to where they would like to be in the future.
+
+
+In addition to the examples which were discussed at length earlier, other Smart Grid capabilities, which a lot of utilities consider implementing, may be considered as litmus test to ascertain the suitability of utility’s Smart Grid Integration Map to support:
+•	Distributed Generation: As discussed earlier, concerns over co-gen synchronization, VAR control, voltage stability, etc have convinced the utilities of the necessity to find ways of achieving a level of integration (notwithstanding regulatory impediments in various jurisdictions across North America) between feeder assets and behind-the-meter customer-owned equipment. Given the fact that the Point of Common Coupling (PCC) between the utility and the customer is the Smart Meter, such level of integration has to be facilitated by utility’s Smart Grid Integration Map.
+•	Sensor Networks on the LV (Low Voltage) side of the distribution system: Although such sensory data on the LV side (such as Phase Measurement Units) have not yet been established as a critical requirement, one should assume that should that become a necessity, the AMI infrastructure could be the primary means to support such real-time data through an auxiliary channel and transport that to the substation. The alternative to using the existing AMI assets for such data would be to construct a dedicated low-latency communication system with a universal communication protocol, and mission critical availability/resilience, together with
+ 
+secure and intrusion-resistant multi-tier access, to be the career of such data for upper layers of the system. And that could be quite costly.
+
+
+Again, irrespective of the chosen architecture for the implementation of Sensor Networks, utility’s Smart Grid Integration Map has to include provisions for supporting additional data networks going forward.
+•	Customer Side EMS: Energy Management Systems on the customer side of the distribution systems are often regarded as “killer-apps”, enabling accurate, reliable, real-time and end-to-end energy management functions. Given the trend to design distribution substations as “Energy Hubs”, in charge of achieving cost-effective management of power and services transactions between prosumers (Producers/Consumers), it is paramount to move away from a broadcast-based global utility pricing/tariff signaling system to a real-time substation-based local pricing signal. Since the price of gas is never the same across all gas stations in a town, so could be the price of electricity across different substations in a given jurisdiction, or in a town. In other words, every substation should be able to price its services based on a host of local parameters (such as load congestion, demand profile, available energy from the grid, and from prosumers, etc). And in that case, utility’s Smart Grid Integration Map should facilitate the required integration between the Energy Hub (the substation) and its termination points (Prosumers).
+
+
+The central theme in all of the examples discussed earlier is the need to have a forward looking Smart Grid Integration Map which empowers utilities to add incremental functionalities to their existing grid, if and when required without the need to re-do any of their previous investments.
+ 
+Given the examples discussed above, which cannot by any stretch of imagination be comprehensive, the utilities have to be extremely careful about the initial investments which they are making in this regard. And that does not appear to be always the case, as some of the choices which have already been made in the early stages of that process are not encouraging.
+
+
+As an example, the prevalent AMI model, implemented in many jurisdictions across North America, relies on local data collection units (often referred to as Data Aggregator Units) as the primary interface between Smart Meters and Metering Data Management (MDMS) applications in the back-office. In such model, the local distribution substation would either be totally disconnected from the AMI system which monitors the customers feeding off its feeders, or if there is any communication between Smart Meters and substation equipment, the data has to go through the round robin of being captured by DAU locally, passed on to its appropriate MDMS in the remote back-office, handed over to SCADA head-end in the back-office, and then find its way through the SCADA network from the back-office down into the substation.
+
+
+It goes without saying that such long delays in data/command communication would make it almost impossible to efficiently run any number of Smart Grid capabilities which rely on distributed command and control and as such require local analytics and decision making. Such applications are by default substation resident, with stringent need to have unimpeded access to real-time data from Smart Meters, Sensors and other termination points associated with that substation. In other words, Smart Meters should ideally be Substation’s “over-the-fence IED’s (Intelligent Electronic Devices), fully engaged in real-time data and command exchange with substation resident functions, failing which they could only be regarded as an interim solution to
+ 
+automate billing and revenue management, and nothing more.
+
+
+
+
+
+Finally, utility’s Smart Grid Integration Map has to support the realization of Utility’s Integrated Network Domains, as depicted in Fig 2.13, which emphasizes the need for a distributed command and control system (using a system of Intelligent Agents) running across multiple domains of the utility network, providing end-to-end communication and data exchange between all utility assets. And in that regard, no Smart Grid asset should be planned as an outlying function, divorced from Utility’s existing and planned functionalities. And if that is the case, one could seriously doubt the biz justification for such expensive assets, or the utility’s ability to roll- out of cost-effective and efficient Smart Grid capabilities.
+ 
+2.4.	Energy hub Paradigm
+
+The utility industry has come to the conclusion that the move to Smart Grid has to start at the bottom of its hierarchical system, where over the past century very little, if any, modernization has taken place. The Distribution part of Utility infrastructure is essentially the same as what it was at the early stages of the electrification in North America. What is notable is that the majority of anomalies and failures which the system has had to deal with, have had their roots in the distribution system as well. At the core of the North American distribution system, substations have traditionally played the role of a Point of Common Connection - that is they housed the protection, switching and metering functions of the utility company. However, in the context of Smart Grid, Distribution Systems need to evolve into foci where services, loads and stakeholders meet to ensure efficient energy transactions across target jurisdictions. Therefore, at the core of global move towards green economy is the need to develop the innovative technologies and solutions required to transform Legacy Grid’s aging Distribution Substations.
+
+
+To realize that vision, significant research in new and innovative substation command and control, and data collection and decision support systems would be required. Utilities, in collaboration with researchers and private industry need to find forward-looking solutions and technologies for:
+a)	Efficient Delivery of Electricity Services to Consumers and Industry
+
+b)	Integration of alternative and renewable sources of energy in the energy mix
+
+c)	Empowerment of consumers to assume their rightful role as a stakeholder to manage their carbon footprint.
+That requires a major paradigm shift in the role of today’s Distribution Substations from an
+ 
+unintelligent point of common connection with consumers into a vibrant Energy Hub, capable of:
+
+i.	Optimizing the utilization of committed substation assets in line with the required service delivery
+ii.	Allowing substations to integrate renewable sources of energy, community storage and co-generation in its energy portfolio
+iii.	Facilitating energy transactions among all stakeholders through innovative communication mediums and protocols
+
+
+2.5.	Energy Hub Vision
+
+The United States Department of Energy’s 2035 Vision for the Electricity Grid of Future identifies the need to develop innovative technologies and solutions for the following three areas of the electricity grid:
+1.	Optimized utilization of assets and increasing system efficiency
+
+2.	Large scale integration of Clean Energy Sources (80% by 2035)
+
+3.	Allowing 100% customer participation in energy transactions
+
+To achieve that vision, DOE advocates significant departure from utility’s hierarchical architecture, positioning Distribution Substations as “Energy Hubs”. The impact of that approach is significant, as Substations could no longer operate as a “flow-through” layer in service/energy delivery, but have to be a hub where available system energy and user demand are corroborated, service needs are rationalized and stakeholders are engaged.
+
+
+To realize that vision, significant research in new and innovative substation command and control, and data collection and decision support systems would be required. In particular, an
+ 
+environment is required to develop the following technologies:
+
+a)	Development of Intelligent Optimization and Conservation Systems for Efficient Delivery of Services to Consumers
+b)	Development of Command & Control Technologies for Substations operating as an Energy Hub
+c)	Development of cost-effective Communication Technologies for Customer-Resident Energy Management Systems
+
+
+While item (a) focusses on developing the intelligence required within the substation to optimize asset commitment in relation to required services, item (b) attempts to extend the required command and control strategies for integration with “over-the-fence” components, such as Co- Gens, storage components and loads. And last but not least, item (c) attempts to develop the required protocols for a communication medium which is native to such components (e.g. Power Line Communication).
+
+
+As an example, the integration of the above three technologies would enable the Energy Hub (i.e. the substation) to capture a real-time view of the available energy in the hub (through PLC communication with Co-Gen and Storage Components), as well as building a real-time load profile (through PLC with Smart Meters and customer-resident Energy Management Systems) and decide what assets are required to optimally provide the required services.
+
+
+The availability of real-time information from the immediate service territory of Distribution Substations could significantly increase their service reliability, lower their cost and prolong the
+ 
+life of their assets. Real-time attributes of this nature can help develop a new generation of highly efficient and optimized Volt/VAR Optimization (VVO) and Conservation Voltage Reduction (CVR) engines. DOE’s recent studies in energy conservation across the US indicated that CVR functions implemented across less than half of US feeders could potentially yield more than 2% demand reduction on the US electrical system.
+
+
+
+
+Shown in Figure 2.14, the Energy Hub of the future is a critical component of Smart Grid, where legacy substations are transformed into semi-autonomous energy management entities, with their own set of energy resources (e.g. feed from the grid, local renewable generators, local storage, etc), static and dynamic loads (e.g. clusters of fast DC charging stations, as well as residential, commercial and industrial loads) managed by a wide variety of highly specialized resident
+ 
+intelligence, allowing the Energy Hub to determine the following:
+
+a.	Which termination points will be served from which source of energy and at what cost
+
+b.	What level of service quality will have to be associated with each customer
+
+c.	Decide in the event of supply shortage, or contingencies, which loads should be shed and which loads should be kept alive
+d.	Keep close watch on the health of its assets, prevent and minimize outages and schedule the necessary maintenance based on system stress and load requirements
+e.	Price its own services based on its cost components (i.e load congestions, age of assets, cost of energy resources, etc) and therefore manage the resulting revenues
+
+
+The last point mentioned above, purports to the idea of spot pricing for electricity. The advocates of this type of energy pricing draw parallels between gas stations and substations, and argue that since the price of gas is not the same across all gas stations in any given jurisdiction, so should the price of electricity be across different substations within the utility network. Although, this may not be realizable in the short term, but all indications are that utility cost framework may dictate the implementation of such pricing strategies in the not too distant future.

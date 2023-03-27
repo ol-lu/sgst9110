@@ -1,0 +1,171 @@
+10.	Microgrid Use Cases, Testing and Validation	
+
+This chapter discusses testing and validation in the context of the Campus Microgrid development, with a focus on use cases. Since the high-level functional testing of the system was entirely use-case driven, a significant discussion of what use cases are and how they relate to testing is included. It is hoped that where applicable, the approaches discussed herein may be replicated in other application microgrids.
+
+
+10.1.	Microgrid Use Cases
+
+Before diving into the details of testing and validation, it is useful to discuss what use cases are, since they play such a large role in driving the high-level system testing in a Microgrid. Simply put, a use case is a list of actions that an actor takes to achieve a goal. An actor can be a human, an external system, or time. Use cases have been employed in software and systems engineering for many years, but are relatively new to the area of electrical engineering. Before the widespread adoption of use cases, the functional requirements of complex systems were typically composed of exhaustive lists of declarative statements such as “The system shall do X. The system shall do Y.” That approach ignores the human in the system, often to the detriment of the functionality of the completed system. It makes it all too easy to overlook requirements. By including humans and external systems in the functional requirements, and indeed declaring how the goals of those humans and systems are to be met, the chances of creating a successful system are greatly increased.
+As discussed, Use Cases are essentially narratives capturing the complex web of interactions between stakeholders involved in initiating, conducting and realizing system’s functionalities and behavior. To document this process, certain tools and platforms have been developed. For
+ 
+instance, Unified Modelling Language (UML) notations could be used for documenting use cases. While a detailed study of the development process of Use Cases is outside the scope of this chapter, it is useful to discuss the basics.
+
+
+The first step in creating use cases is typically the creation of an actor-goal list. This is a simple list of the actors that will be interacting with the system, and what each actor’s goal is in using the system. A trivial example of an actor-goal list follows in table 10.1.
+
+The actor-goal list serves as the starting point for each use case, and each use case is then further refined to a “fully-dressed” use case, which can include actor definitions and roles, specific information exchanged, preconditions and assumptions, step by step description of how the goal is to be achieved, post conditions, etc. Alistair Cockburn defined a use case template in his popular book Writing Effective Use Cases that include the following fields:
+-	Title (an active-verb goal phrase that names the goal of the primary actor)
+-	Primary Actor
+-	Goal in Context
+-	Scope
+-	Level
+-	Stakeholders & Interests
+-	Precondition
+-	Minimal Guarantees
+-	Success Guarantees
+-	Trigger
+-	Main Success Scenario
+-	Extensions
+-	Technology & Data Variations List
+ 
+Use cases are often modeled in diagrams. The Unified Modeling Language, or UML, visually expresses the relationships between actors and use cases in use case diagrams. Below is a simple use case diagram that expresses the use cases from our actor-goal list example. 
+Actors in Diagram 10.1 are displayed as stickmen figures, 
+The Electric Power Research Institute (EPRI) has published many use cases rlated to smart grid on their website located at http://smartgrid.epri.com/Repository/Repository.aspx.
+ 
+Of particular interest is the Microgrid use case category. Below are the Actor Roles for some of the EPRI Microgrid use cases.
+ 
+
+EPRI currently has ten use cases related to control and operations between the Area Electric Power System (AEPS) and Advanced Microgrids in connected, transition, and islanded modes. These ten use cases are:
+-	Frequency control
+
+-	Voltage control (grid-connected & islanding)
+
+-	Grid-connected to islanding transition – Intentional
+
+-	Grid-connected to islanding transition – Unintentional
+
+-	Islanding to grid-connected transition
+
+-	Energy management (grid-connected & islanding)
+
+-	Protection
+
+-	Ancillary services (Grid-connected)
+
+-	Black start
+
+-	User interface and data management
+
+
+Let’s look at a couple of examples of these microgrid use cases. Following is the EPRI use case for intentional transitioning a microgrid from grid-connected to islanding.
+ 
+ 
+The EPRI Use Case Repository also details the information exchanged in the use case. The information exchanged in the Intentional Islanding use case is shown in Table 10.2 below.
+
+
+ 
+The EPRI Use Case Repository also has a section to indicate any contracts or regulations that a use case must adhere to, and the impact of those contracts and regulations on the functioning of the system within the context of the use case. The Intentional Islanding Use Case Contracts/Regulations section is shown below in table 10.3.
+The real heart of a use case is the step by step description of how the goals of the actor(s) are met. EPRI calls this the “Step by Step Analysis of Function”, and is shown in table 10.5 below. This is preceded by the Preconditions and Assumptions as shown in table 10.4 below, and succeeded by the Post-conditions and Significant Results as shown in table 10.6 below.
+
+ 
+
+Since Use Cases describe exactly what goals the system is trying to achieve, and have step-by- step descriptions how they achieve those goals, and what results are expected, we can see how well they lend themselves to testing. Each use case translates directly into one or more test cases where the completed system is put through its paces to ensure that expected results are achieved.
+10.2.	Planning and Design
+
+The testing and validation of a microgrid is guided by planning. In the case of the OASIS system, there were several planning stages, first of which began during the system design phase due to the compressed timeline of the project.
+ 
+Two design charrettes were conducted at the start of the project to introduce partners, discuss very high level concepts as design candidates for the system, identify communication protocols for integration, and during that process it was agreed that an aggressive approach to testing was required due to the short project timelines, and geographical separation of the project partners. This led to the decision to have project partners collaborate on pair-wise integration testing to test communication integration remotely.
+The key planning considerations for testing specific to this project were:
+
+•	Compressed timeline for completion of the project
+
+•	Components coming from different partners had never previously been integrated
+
+•	Need for integrated components to be remotely tested to ensure on-site integration went smoothly
+•	Need to ensure project partners understood the overall objectives and goals of the entire system rather than just the particulars of their own components.
+Testing of individual components was typically done by partners at the factory according to their own Factory Acceptance Testing (FATs). The results of these FATs were provided upon request. Components from different partners that were required to communicate with each other require Factory Integration Testing (FITs) to ensure the components work correctly when shipped to the job site. Site Acceptance Tests (SATs) were conducted once the components were shipped to the job site to ensure they were not damaged in shipping, and meet design specifications. Finally, high level Use Case testing was conducted to ensure the system meet the overall project objectives.
+ 
+In the case of the OASIS project, testing was made more difficult due to the language, cultural, and time zone differences between the partners involved. Commissioning and integration was very time constrained due to the cost of travel and accommodation of personnel from the various partners.
+
+10.2.1.	Detailed Design and Specification
+
+Test plan documents for the system were developed early on, and shared with all project partners. In the case of the OASIS system, this was done via a wiki. It took considerable efforts and time for the design team at BCIT to draw the attention of partner personnel, who were assigned to implement the solution, to review the tests plans on the wiki and provide BCIT with their feedback. Ordinarily, and as the case is in many engineering projects, such personnel tended to focus on their own individual projects, rather than being concerned with the solution as a whole. This was one of the major issues which had been discussed between partners during the initial planning charrettes, and the management in each partner organization was well aware of such risks and had taken the necessary steps to reduce its impacts.
+
+10.2.2.	Partner Factory Acceptance Testing (FAT)
+
+Factory Acceptance Testing was done by the partner at the factory to ensure the component complied with the partner specifications and was ready to ship. Moreover, and as expected, there were cases in which certain FATs could not be shared across all partner teams due to Intellectual property considerations.
+10.2.3.	Pairwise Factory Integration Tests (FIT)
+
+Factory Integration Tests were performed by partners at their factories to ensure their components would communicate properly with other partner components. Pairwise refers to two
+ 
+components coming from different companies that need to communicate with each other. The FIT testing was necessary due to the compressed timelines of the OASIS project. BCIT could not afford the time to debug communication problems as the components arrived onsite, so this process needed to be done ahead of time.
+Moreover, there were technical challenges getting VPNs in place and firewall DMZs set up to allow different partners to conduct remote testing of components. Such arrangements had to address the rightful concerns which some partners may have had in opening up these communication channels to other partners who may have been perceived as competitors in some areas.
+Despite rigorous planning, FIT testing between some of BCIT partners was not completed as their respective components were not ready at test time. To address this, BCIT created software that emulated the signals that such components would generate and tested them remotely with the rest of the system.
+10.2.4.	Partner Site Acceptance Testing (SAT)
+
+All partners were required to conduct the agreed upon SATs to ensure that their components arrived undamaged, and performed according to specification. However, despite careful planning, delays on one partner’s part affected other partners which created difficulties in completing all testing on time.
+10.2.5.	Use Case Testing
+
+The Solution Functional Testing, or Use Case Testing, focused on verifying that the Energy OASIS system’s control system and electrical power components could operate in the modes which demonstrate defined objectives of the system development project; that it can be configured to operate with the system behavior defined by the objectives, and that it responds
+ 
+safely and in a manner reducing risk of damage to faults in any subsystem, and actively notifies remote system operators of faults.
+The specific Use Cases tested were:
+
+•	Storage and later use of PC for EV Quick-Charging with no impact on grid
+
+•	Support loads during power outage
+
+•	Support loads until unable during power outage
+
+•	Intentional islanding – EV charging using BESS storage
+
+•	Intentional islanding until unable to continue
+
+•	Optimal dispatch of energy in a microgrid
+
+•	Fault handling at the system level
+
+Each of these Use Cases is discussed in a plain language summary below. It is useful to note that these are the highest level Use Cases, representing the major goals of the project. More trivial Use Cases such as system login, logout, etc. are of less interest and beyond the scope of this document.
+10.2.6.		Storage and Later Use of PV for EV Quick-Charging with No Impact on Grid
+This test used stored PV generation only to charge two EVs. To ensure only stored PV generation was used, the battery system was discharged to its lowest allowable state (20% SOC), then allowed to charge using PV only (i.e. not via the grid) to at least 30% SOC. The test took place while grid connected, but the system was not allowed to draw power from the grid. The two EVs were then charged using the battery system only – PV was disconnected during the EV charging.
+10.2.7.	Support Loads During Power Outage
+ 
+This test used manipulation of the POI breaker state to simulate grid power failure and restoration. Prior to the invoked grid power failure, PV generation capability was removed from the OASIS system so that OASIS was forced to use BESS battery energy to support loads during the outage. EV Charging (2 vehicles) and Canopy Lights were used as OASIS system loads during the grid outage, and the test assessed whether OASIS supported those loads during the grid outage. The test also assessed whether the OASIS system operated normally in grid- connected mode after grid power was restored. An EV charge after grid power restoration was used to verify this.
+10.2.8.	Support Loads Until Unable During Power Outage
+
+This test was very similar to the previous test with the main difference being that the test was run until the system was no longer able to support the loads. This test used manipulation of the POI breaker state to simulate grid power failure and restoration. Prior to the invoked grid power failure, PV generation capability was removed from the OASIS system so that OASIS was forced to use BESS battery energy to support loads during the outage. EV Charging (2 vehicles) and Canopy Lights were used as OASIS system loads during the grid outage, and the test assessed whether OASIS supports those loads during the grid outage.
+This variant of the test allowed only a small amount of energy to be stored in BESS batteries prior to the simulated grid outage, and kept using loads (EV charging) until the system had insufficient energy to support those loads. The test assessed the control system’s and electrical system’s response to that energy shortage. The DEMS and BCIT Software (EV Charging Load Manager) collectively acted to deny or cut off EV charging due to low available energy.
+The test also assessed whether the OASIS system operated normally in grid-connected mode after grid power was restored. An EV charge after grid power restoration was used to verify this.
+ 
+10.2.9.	Intentional Islanding – EV Charging Using BESS Storage
+
+This test involved scheduling a period of intentional islanding with the Operator Portal HMI. The ability to use PV during islanding was removed, so that only BESS stored energy could be used to support the loads during the islanded period. The system was expected to automatically pre- charge the BESS to support this islanded period. Two EV charges were conducted during the islanded period. The system reconnected to grid on schedule, and an additional EV charge was used to verify normal grid-connected operation.
+10.2.10.	Intentional Islanding Until Unable
+
+This test was very similar to the previous test with the main difference being that the test was run until the system was no longer able to support the loads. This test scheduled a very long period of intentional islanding with the Operator Portal HMI. The ability to use PV during islanding was removed, so that only BESS stored energy could be used to support the loads during the islanded period. At the start of test, the BESS batteries were fully discharged. The system automatically pre-charged the BESS to support this islanded period, but only a small amount of energy was allowed back into the BESS batteries. Two EV were charged during the islanded period. The system ran out of energy during the intentional islanding period, and the DEMS control system also predicted running out of energy. The DEMS commanded an early return to grid-connected mode and the system executed that command. DEMS re-commanded islanding once enough power was stored in BESS to support some more islanding, and that the system islanded again.
+The system reconnected to grid on schedule, and an additional EV charge was used to verify normal grid-connected operation.
+ 
+10.2.11.	Optimal Dispatch of Energy in a Microgrid
+
+This test comprised the pre-scheduling, using the Operator Portal HMI, of three successive time periods: the first being a grid-supported mode in which the system was allowed to and expected to draw power from the grid, followed by a grid-neutral time period when the system was not allowed to draw grid power but could contribute PV power to the grid if excess was available, followed by a period when the OASIS system was actively grid-supporting: that is, had been directed to generate power to the grid at 250kW.
+
+
+At the start of the test, the BESS batteries were fully discharged, and the ability to use PV power was removed, so that the DEMS was compelled to demonstrate charging the BESS batteries from grid input power, during the first, grid-supported time period.
+
+
+There were two additional aspects of the test. During the middle, grid-neutral time period, the DEMS HMI was used to command generation of reactive power to the grid to counteract prevailing low power factor.
+
+
+The last aspect of the test was that during the grid-supporting time period, an EV charge was attempted, but the control system and user interfaces of the system rejected that EV charge initiation, due to the fact that the system had been asked, at higher priority, to generate 250kW to grid and 250kW is the maximum allowed power flow out of the inverter system toward grid and loads combined.
+
+
+10.2.12.	Fault Handling at the System Level
+ 
+This test consisted of generating a fault/fault-indication in each major subsystem, verifying safe system response, and exercising restart. The tests were carried out with a fault injected into each of BESS/SBS, PV, PCS, EV Charger, SUBK breaker, BCIT S/W, and MEM subsystems.
+The general procedure for the test of each fault was: Generate fault, observe fault indication in HMI, operators to be notified of fault by email, verify OASIS automatic system safe-ing, carry out simulated diagnosis and actual fault clearing procedure, restart OASIS system and verify normal operation.
+10.3.	Lessons Learnt
+
+BCIT learned that despite early agreement among partners that testing was a high priority, when it came time to perform particularly the FIT tests, some partners were reluctant to work with other partners due to the competitive nature of private industry.
+Technical challenges relating to this included difficulties with a certain partner’s choice of VPN product that made it challenging to get other partners, and BCIT, connected in order to perform the testing.
+Unforeseen challenges relating to this testing included cultural differences between partners from different countries. For example, employees of a partner could be very blunt and direct in identifying an issue or problem, which can offend those of another partner who culturally prefer a much milder approach and interpret such directness as being rude.
+Operational challenges with this testing were the reality that different partners were in different time zones, which made interoperability testing very difficult. Some partners had union rules around working hours for their employees which made it difficult to coordinate times for testing.

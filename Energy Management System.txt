@@ -1,0 +1,352 @@
+6.	Energy Management System	
+
+As discussed in Chapter 3, BCIT Smart Microgrid includes an Energy Management System (EMS) stream. With the Campus Microgrid evolving over the years, its EMS had been under continuous iterative development. New data monitoring tools were added as new components were installed. Various smartgrid functionalities such as demand response and load control were implemented to study the impact and feasibility of different strategies.
+
+
+One of the latest additions to BCIT Smart Microgrid is Energy OASIS. This system can act as a microgrid on its own since it is capable of operating in islanded mode while isolated from the grid. With a photovoltaic installation, a battery storage system, a power conversion system, a connection to grid and multiple electrical loads, Energy OASIS provided an opportunity for the development of a sophisticated EMS that would be capable of balancing the energy between the different components within the system.
+
+
+6.1.	EMS Objectives
+
+Energy Management System is a broad term that describes the computer-aided tools which facilitate intelligence in a smart microgrid. The components in a smart microgrid, whether energy sources or electrical loads, have either built-in communication interfaces, or are connected to devices with such interface (e.g. a smart meter). They are capable of providing data measurements regarding their state and accepting control commands to alter that state. As a central piece to a microgrid, the EMS connects to every component through these interfaces and perform three main functions: monitoring, optimization and control.
+ 
+Monitoring allows the EMS to aggregate data measurements across all components and have an overview of power flow within the microgrid. Equipped with the knowledge of the amount of generation from renewable energy resources, as well as the energy coming from conventional means (such as the grid) and energy consumption from all the electrical loads, the EMS can optimize the performance of the microgrid according to preset operational objectives. These objectives include, but are not limited to, minimizing energy cost, maximizing use of renewable energy resources, maintaining critical loads and maximizing system lifetime. Optimization often involves a planning process which gathers generation and load forecast information to make prediction of the future energy state of the microgrid. It takes into account the possible upcoming energy requirements of the system and does not solely rely on real time information from monitoring in making its control decisions. The result of optimization is executed through issuing commands to the controllable components of the microgrid. With monitoring, optimization and control functionalities, an EMS is capable of the following:
+i.	Enabling the integration of renewable energy resources with conventional generations
+
+ii.	Enabling the integration of energy storage units such as battery and thermal systems
+
+iii.	Optimizing the dispatch of distributed energy resources to reduce total cost of energy
+
+iv.	Monitoring the system's electrical interchange and performing real-time corrections
+
+v.	Managing different load types (e.g. fixed, controllable, interruptible & reserve load)
+
+vi.	Providing monitoring and control tools for operators via user interfaces
+
+As a smart microgrid, Energy OASIS is comprised of a photovoltaic (PV) installation, a battery storage system, a power conversion system (PCS), several electric vehicle (EV) chargers (both DC fast chargers and Level 2 chargers) and a connection to the local BCIT grid. The Energy OASIS EMS helps integrate all these components together. The main interface for monitoring
+ 
+exists between the PCS and the EMS, where the PCS provides data measurements for PV and batteries such as solar generation, state of charge etc. EV charging loads and the grid’s point of interconnection are also monitored through a number of smart meters connected to these components. Through monitoring, the EMS has an understanding of how much energy is available from each energy source and how much energy is being consumed by each electrical load. Additionally, weather and load forecast as well as a grid constraint schedule (further explained in 6.2) is supplied to the EMS. The weather forecast, containing multi-day temperature and solar irradiance data, is converted into solar generation forecast. Load forecast shows the amount of expected EV charging and the corresponding power requirement. All of this information is inputted into an optimization process which employs linear programming algorithms to produce a multi-day energy balancing plan.
+
+
+
+Figure 6.1 shows the balance between energy sources (PV, battery discharging, grid import) and loads (EV charging, battery charging, grid export) in the first 24 hours of a sample energy plan. The y-axis represents the power sources (above x-axis) and power consumption (below x-axis) in a 15 minutes interval. Due to the frequent changing nature of this microgrid, optimization is re- calculated every 15 minutes, unlike planning for a larger system where once a day calculations may suffice. With an energy plan, the EMS is able to make high level control decisions in how to operate Energy OASIS such as when to charge or discharge the battery storage (yellow above or below x-axis), when to export or import power to or from the grid (maroon above or below x- axis) and when to curtail the EV charging loads (light pink). For example, during periods of high PV generation, excess energy is stored into the batteries whereas batteries are discharged to supplement low PV generation to fulfill loads. Control commands (battery set-point, EV charger control) are issued accordingly through interfaces provided by controllable components.
+However, energy plans based solely on forecast will eventually deviate from real time conditions of the microgrid. Therefore, the Energy OASIS EMS makes minute to minute adjustments to its control commands to account for the difference between forecast and monitored data values.
+
+
+6.2.	EMS Applications
+
+The control decisions made by the Energy OASIS EMS needs to reflect the operational purpose set by system operators. The two main operating modes of Energy OASIS are grid-connected and islanded. Islanded operating mode can be further categorized as intentional islanding (planned) and unintentional islanding (unplanned). The EMS contains different logic and optimization strategies which are used to derive its energy plans when the system is operating in
+ 
+different modes.
+
+
+
+
+
+In the grid-connected situation, the local BCIT distribution grid is factored into the planning and optimization process. Power can be imported from the grid and excess generation can be exported to the grid. A grid limit (constraint) schedule is inputted into the EMS to indicate the maximum amount of power that can be imported from the grid (as a negative limit) or the minimum amount of power that must be exported to grid (as a positive limit) at any given time of the day. Having such limit as an input to the energy planning process enables the EMS to facilitate the reduction of peak demand of local grid through the scheduled use of renewable resources and energy storage systems. Figure 6.2 shows a typical profile of weekly power demand of a portion of BCIT campus loads supplied by one feeder. The demand is near 3MW (red and green) during peak hours. Through the EMS, minimum export requirement can be set
+ 
+during those peak hours (green) to lower the overall consumption from the utility grid. If solar generation does not produce enough energy to meet the export requirement, the battery storage system can be discharged to supplement it. In this case, the batteries can be recharged during non-peak times (blue) when power is allowed to be imported from the local grid by the grid limit. This Use Case of the EMS can be applied to cases in which utility pricing tariffs (time-of- use pricing or demand peak pricing) exist. The system can reduce the electricity bill by scheduling the use of renewable sources when energy cost is high and recharging from the grid during low energy cost periods.
+
+
+With variable and sometimes unpredictable power coming from the renewable energy source in Energy OASIS, combined with the occasional need to meet peak demand reduction objective, the EMS must perform demand response load management on the EV charging station to lower the energy needs in the microgrid. Two tiers of loads exist in Energy OASIS in the form of reserved charging load and non-reserved charging load. This is used to demonstrate the EMS ability to prioritize and curtail loads based on their priority. Load curtailment allows the EMS to respond to generation and demand changes which can occur frequently in a microgrid. It is also crucial that the EMS understands the priorities of the load such that less critical loads (non- reserved charging) are shed before more critical ones (reserved charging) have to be shed. This allows the most important loads to be protected in the event of power failure or outages (unintentional islanding) by ensuring the availability of energy for such loads.
+
+
+While the role of the EMS in islanded mode operation is mostly managing loads, it is also responsible for several other planning and control tasks unique to this mode. The EMS enables
+ 
+system operators to schedule intentional islanding periods through an operator portal. When the EMS receives request of an intentional islanding period, it evaluates the feasibility of entering into such mode by examining the available energy for that period and prepares for it by charging the batteries if necessary. At the requested time, the EMS opens or closes the appropriate contactors and circuit breakers to disconnect Energy OASIS from the grid. This process also triggers automatically when the loss of grid is detected during unintentional islanding. At the end of an intentional islanding period or if the EMS recognizes the system is no longer able to support all its loads, the EMS reconnects the microgrid back to the grid. For unintentional islanding, the return of grid needs to be detected before reconnection occurs. These control capabilities of the EMS allows the microgrid to be easily switchable between operating in grid- connected and islanded modes.
+
+
+The operation of a smart microgrid, both in grid-connected and islanded mode, produces a large amount of useful data. Probed by the monitoring function of the EMS, these data readings are processed and presented to various types of users of the system via portals and other user interfaces. In Energy OASIS, system operators can view the real time state of the system presented by a customized HMI. They are also able to quickly respond to issues and problems that may arise within the microgrid with the help of e-mail notification of alarms and faults sent by the EMS. Additionally, the data collected is archived in the EMS. Historic data related to different components can be extracted to perform analysis on generation amount, consumption trend, and system deficiencies etc. This can lead to changes and improvements that helps advance the microgrid.
+ 
+6.3.	Planning & Design
+
+Early in the design stage of Energy OASIS, high level project objectives were defined. The key planning considerations for the Energy OASIS EMS had to ensure that it delivered those objectives in the most cost-effective and scalable manner. In other words, the monitoring, optimization and control functions of EMS was designed to:
+•	integrate PV panels and energy storage by charging batteries when PV panels are generating power
+•	mitigate the impacts of EV charging by discharging batteries based on EV charging station demand
+•	manage multiple distributed energy resources on the same distribution network including optimal dispatch and islanding
+The EMS was therefore designed to be capable of integrating with other Energy OASIS components. This included considerations for the characteristics of those components (renewable resource or controllable load) and how they should behave in different operational situations. In order to perform monitoring and control on those components, the EMS was equipped with the means to communicate with them via established protocols with clearly defined interfaces.
+
+
+For Energy OASIS as a whole, the EMS performs energy optimization in both grid-connected and islanded modes and makes decisions on how energy should flow in the microgrid. What should the solar generation be used for? In what situation should the grid be used for import or export? When should the EV charging loads be curtailed? How should the battery storage be used? The ideal design had to address those questions and establish strategies for the different ways the system could be operated in. Once that was determined, it painted a clear picture of
+ 
+what inputs were needed for the optimization process and what control decisions should result from it.
+
+
+While the optimization process would determine the amount of energy available for EV charging, the EMS had to decide on how individual chargers were controlled to ensure that they consumed only what was allocated to them. This decision depended on the control interface which was provided by the EV chargers. Many attributes had to be taken into account; such as whether or not the input power could be adjusted; and if yes under what conditions; or could the chargers be stopped prematurely? Moreover, the negative impact on EV drivers using the charger had to be taken into consideration and minimized when making these control choices.
+
+
+Another important part of the Energy OASIS EMS was its user interface for different users of the system. System operators needed to be able to view the monitored values, such as PV generation, load consumption, battery state of charge, etc. They also needed to be able to run the system in various modes to demonstrate different optimization strategies. Lastly, they needed to be alerted to any non-nominal operation of the system’s equipment or power levels in a manner that would allow them to respond quickly. Another group of users for the system were the EV drivers who would be interacting with the EV chargers. Since load management played a prominent role in the operation of Energy OASIS, load curtailment was regarded as a possibility which needed to be properly communicated to the EV drivers. Additionally, to demonstrate the ability to manage different priority of loads, a reservation system was planned as part of the EMS for EV drivers to reserve their charging session as a higher priority load than non-reserved ones.
+ 
+
+
+
+
+
+
+Having defined these EMS capabilities, several subcomponents were designed and implemented to fulfill the tasks necessary to achieve them. They are shown in Figure 6.3. The PCS, EV chargers and battery system are included to illustrate the communication path between them and the EMS, used for monitoring and control.
+ 
+Microgrid Energy Manager: OASIS EMS was built using components of a Microgrid Energy Manager (MEM), an ‘off-the-shelf’ commercially available product. It contained a suite of software modules which enabled microgrid energy optimization, collectively referred to as the Decentralized Energy Management System (DEMS). MEM also included an HMI (Human Machine Interface) which provided visualization of monitored data values and statuses of each Energy OASIS component and allowed supervisory control inputs from system operator for a wide variety of functions, such as starting up the system, enabling or disabling a particular component etc. Monitoring and communications were handled by the Power Automation System (PAS).
+
+
+Despite being a readily available product, MEM was not a plug-and-play tool. It had to be customized by the design team, to meet the operational needs of Energy OASIS. DEMS performs the primary task of the EMS which is energy optimization and planning. Figure 6.4 illustrates the basic process for energy optimization (as discussed in 6.1). To recap, it takes weather forecast, load forecast and grid constraints schedule as input. Along with real time monitored values for current battery state of charge and solar generation, DEMS would then attempt to produce a three-day look-ahead balanced energy schedule for the microgrid. Based on this schedule, control commands are issued by MEM to direct the power flow within Energy OASIS.
+ 
+
+
+
+
+
+
+One of the components controlled by MEM is the battery storage system. Initial design of battery control by MEM involved issuing a set-point based on the result of DEMS planning. A negative value would indicate battery charging and a positive value would indicate battery discharging.
+However, the design team opted for an alternative design. MEM would control the inverter output power in the PCS and also choose from a number of PCS operating sub-modes which combine the use of battery storage system and PV in various ways. This approach unnecessarily complicated MEM’s role in the control of the battery storage, as it put the burden of calculating the PCS output power on the high level system. In the final design, the single battery set-point specification was restored and the PCS was made responsible for calculating inverter output power.
+ 
+Calculation of battery set-points, along with control decisions for EV charging are now the outcomes of the optimization process. To configure this process, components of Energy OASIS are modeled in DEMS, which involves defining the PV panels, battery storage, EV charging loads, and grid power limit as DEMS units (such as generation unit, battery unit, controllable load unit). These units are represented by their characteristics, together with appropriate cost values assigned to each. For example, the storage system is represented by a battery unit, which has parameters such as maximum capacity and usable capacity (as constraints). Cost values are crucial in the execution of the optimization algorithm as they are used to determine the priority of energy sources and loads. The end goal of the algorithm is to minimize cost. Therefore, an energy source with a lower cost assigned will be used before a higher cost one. On the contrary, a higher cost load will be curtailed after a lower cost one. Based on project objectives, the design team created a DEMS model capable of generating optimization plans which:
+•	Maximizes the use of PV generation
+
+•	Stores excess PV generation in battery storage for future use
+
+•	Curtails lower priority loads before higher priority or critical loads
+
+•	Adheres to battery storage minimum state of charge constraints
+
+•	Respects grid interchange power flow limits (import /export limit)
+
+•	Ensures energy availability for intentional (planned) islanding period The cost model which enables the above is defined as follows:
+Energy sources in increasing cost order
+
+I.	PV generation
+
+II.	Grid import below grid power input limit set by system operator
+
+III.	Battery discharge
+ 
+IV.	Grid import above grid power input limit set by system operator Energy loads in increasing opportunity-cost-if-missed order
+I.	Grid export above grid power-out minimum constraint set by system operator
+
+II.	Battery charge
+
+III.	EV charging load without reservation
+
+IV.	EV charging load with reservation
+
+V.	Grid export below grid power-out minimum constraint set by system operator
+
+
+As a unit modeled in the DEMS optimization process, the battery storage system includes configuration for the minimum state of charge. However, to ensure the availability of an 'energy reserve' as preparation for unintentional islanding, two levels of battery minimum state of charge constraints are defined. Otherwise, DEMS plan can result in situations where very little or no energy is available during power failure as energy level is close to, or already at the minimum, effectively disabling the battery storage system with no discharging allowed. The inclusion of a secondary limit enables grid-connected operation of the system to use battery storage up to an upper soft limit value, and islanded (intentional and unintentional) operation to use battery storage up to a lower hard limit value. The buffer between soft and hard limit is currently set to be 20% (approximately 90kWh) but can be adjusted in the MEM user interface. Once the two battery limits were implemented in the model, it was noticed that DEMS never plans to use the buffer battery storage during intentional islanding requests even when renewable energy resource was not enough for loads. This was due to the fact that DEMS logic required the battery state of charge to return to the soft limit level immediately after islanding mode ended, which was impossible as the battery generally did not act as a load (charge) when there was low generation
+ 
+in islanding mode. A design change in the optimization algorithm was implemented to add a charging period of one hour after islanding mode ended to allow batteries to return to soft limit level state of charge via grid power or PV generation.
+
+
+With the model created, forecast values are required as inputs to the DEMS energy optimization process. One such forecast is weather data. The design team researched and assessed a number of sources for this data. An Internet-based weather service was identified as a candidate, capable of providing hourly forecast, including sky cover values, from present time to up to 10 days in future. Additionally, a weather station located on BCIT Campus near the site of PV panels is used to provide an array of current weather data, most notably a solar insolation value. An early attempt was made to integrate these sources into MEM and use them in DEMS. However, the design team was concerned that such solutions were often found to be unreliable in the long term. After researching into a number of more reliable sources, BCIT chose a research quality data feed from UBC (University of British Columbia) which provided solar irradiance and temperature values at 15-minutes granularity for a 3 day period in CSV format at a fixed path on an HTTP server. BCIT technical team developed an application to import this data on a daily basis, reformat it into a separate file and place the file onto a fileshare (FTP) for MEM to integrate into the DEMS model. The load forecast and grid limit schedule, generated internally within other components of the EMS, were provided to MEM via the same method.
+
+
+Another vital EMS design decision was related to the frequency of the DEMS energy optimization process. Originally, the design team intended it to be run once a day, which was the typical use of DEMS. The time required to run the optimization algorithm was thought to be long
+ 
+(around half an hour) which prompted the design team to discourage more frequent execution of this process. However, this was found to be impractical as Energy OASIS was essentially a microgrid system where parameters tend to change often. A ‘once a day’ plan could not account for the real time changes that occur within a microgrid on a minute by minute basis, including the fluctuation of PV generation, the unpredictably of load (humans are in the loop, and can start or stop significant loads, such as EV charging, at different times than predicted), and battery storage state of charge variation from prediction. After some testing of the DEMS model representing the microgrid, it was realized that the optimization calculations did not take more than several minutes, perhaps, due to the smaller scale of Energy OASIS. Therefore, DEMS planning frequency was changed to every 15 minutes, which better accommodate the rapid changing nature of the microgrid and improved the control decisions by the EMS.
+
+
+Through an iterative design process, the DEMS energy plans generated for various operational scenarios were examined to ensure the control decisions were logical and followed project objectives. An issue was discovered regarding the curtailment of EV charging loads. DEMS plan balances energy in 15 minute intervals as illustrated by the columns in Figure 6.1. In the initial version of DEMS planning, DEMS would often arbitrarily choose which several 15 minute future time slots in which to curtail EV charging, in case the entire multi-day lookahead plan showed insufficient available cheap energy to meet all load demand. Often this resulted in the current-time 15 minute interval having car charging curtailed.
+
+
+Given that cars showing up are discrete unlikely events, and that the DEMS actually has free choice of which 15 minute interval to curtail, it turned out to be better to give DEMS a slight
+ 
+time-based cost-factor to prefer curtailing loads later into its future plan than at the present time interval, should it have the freedom to choose.
+
+
+The general principle is that the plan for the near-term future is based on more certain information than the plan for the later future, so a better plan to handle the deferred curtailment may be computable closer to that time.
+
+
+Subjectively, this reduced the number of negatively perceived “charging unavailable or slow” messages for EV drivers. The process treats every quarter-hour interval equally. When there is not enough energy in the system to fulfill loads over a duration that spans multiple 15 minute intervals, the plan would arbitrarily select the intervals where energy for load is curtailed. For example, if there is only enough energy for one hour of EV charging in the next five hours, the plan might curtail EV charging in the first four hours and fulfill the charging load in the fifth hour. However, in the real life situation, it is much more ideal to curtail loads in the future than in the immediate hour. As it has been pointed out previously, microgrid parameters change frequently. It is unlikely that the energy state of the system is the same as the current plan had forecasted when it reaches a time slot later in the future. Fulfilling immediate loads, rather than curtailing them based on arbitrary selection, is more optimal. To remedy this arbitrary selection, DEMS model was adjusted such that EV charging load has a small decrease in cost-of- curtailment over time. Curtailment of lower-curtailment-cost loads is more desirable in optimization, allowing the present time charging loads to be supported. However, the decreased cost of curtailing EV charging load must remain more costly than the price earned by exporting to the grid. Otherwise, loads will be curtailed in favour of grid export.
+ 
+
+
+Apart from the complex task of energy optimization, MEM also interfaces with other component of the system, directly or indirectly through other components (such as PCS) or via established industrial communication protocols (such as IEC-61850 or Modbus). The actual signals exchanged between them are largely defined through a collaborative process, managed by the EMS design team. These signals included values to monitor (e.g. component voltage, current, power) and commands to issue (e.g. set-points, start, enable). Moreover, signals that required processing by the MEM (e.g. calculated values, splitting register bits, etc) were identified and implemented. This is further expanded on in Section 6.4. One special group of signals which MEM monitors were the alarm and fault status of Energy OASIS components. However, there were an overwhelming number of individual alarms or fault signals available from individual components. A subset of the alarms and faults were selected for high level monitoring, while related alarms or faults were grouped at the component level (e.g. all battery storage alarm).
+Alarm and faults monitored by MEM were meant to make the system operators aware of the existence of potential problems. Upon detecting such alarms, the operators would be expected to further investigate the issue. Therefore, detailed alarms and faults would not be required.
+
+
+System Operator Portal: System Operator Portal allows users to set and switch the operating mode of the system. It provides an overview of the system state and also communicates the alarms or faults monitored by MEM to operators. As a high level user interface, accessibility and ease of use was a major consideration during the design. The portal required an interface with MEM to acquire system state values (such as energy, power readings, etc) as well as to send commands (e.g. set overall modes).
+ 
+
+
+In the initial design, the system operator portal would simply allow an operator to select or change the overall Energy OASIS system operating mode in real time (e.g. choose one operating mode from a group of mode buttons) with immediate effect. For example, the operator would change the system immediately from a “taking power from grid” mode to a “no-grid-impact” mode or a “send power to grid” mode. Similarly, intentional islanding and return-from-islanding was to be initiated in this same immediate button-press manner. This design was changed to allow the operator to create, and in a second step enact, a schedule (up to 3 days forward- looking) of changes of Energy OASIS system operating mode. The system operator portal user interface allowed the operator to visually draw the operating mode schedule on a timeline chart, and then activate the altered operating mode schedule. The operator could also load predefined schedule templates of typical operating mode change patterns, and then enact a schedule based on the template.
+
+
+Originally, overall OASIS system operating modes, to be commanded by System Operator Portal and implemented by MEM, were conceived as:
+I.	EV charging from solar and stored solar only (Grid-connected but not using grid power)
+
+II.	Peak shaving campus load (Sending battery power back to grid during demand peaks)
+
+III.	Islanded operation
+
+IV.	Maximize asset lifetime value (Grid-connected but minimal or no use of batteries) However, in the interest of reducing system complexity, the operating modes were further simplified to:
+a.	Islanded
+ 
+b.	Grid-connected In conjunction with:
+c.	High EV Charging Frequency
+
+d.	Low EV Charging Frequency
+
+This led to an Energy OASIS control system design impasse, in that the new proposed modes allowed no way of explicitly demonstrating an energy management configurations that could control the microgrid's impact on the grid. Nevertheless, such energy management configurations had already been defined in, or strongly implied by, the project objectives. In other words, project objectives required the system operator to command the use of grid (import, export, not used) by selecting from these operating modes.
+
+
+The impasse was eventually resolved when the BCIT team developed a new control interface, in which the System Operator Portal could send MEM a mode schedule (command/set-point time series) which consisted of time periods of a special set-point value meaning intentional islanding, interspersed with grid-connected time periods where a varying grid limit was specified for MEM in the schedule. The meaning of the grid limit (in negative value) was that the MEM should optimize the microgrid's energy use, or storage, and control the batteries such that Energy OASIS as a whole did not draw more power from the grid than the grid limit specified. The grid limit in the mode schedule could also take on positive values which required that Energy OASIS to send at least the specified level of power back to the grid. Effectively, a schedule of the single grid limit values, supplemented by a distinguished code value meaning “switch to islanded” (intentional islanding), would tell MEM to control the microgrid so that at pre-specified times of the upcoming day Energy OASIS as a whole was one of:
+ 
+a.	Grid-Neutral (Grid-connected but using no grid-power)
+
+b.	Grid-Supporting (Sending power back to the grid)
+
+c.	Grid-Supported (Able to draw a limited amount of power from the grid)
+
+d.	Islanded
+
+e.	Using unlimited grid power, and minimizing battery use.
+
+These five situations, if Grid-Supporting and Grid-Supported were used in opposition to local grid demand peaks, were equivalent to the original four operating modes contemplated for the system, but constituted a simpler control input to MEM.
+
+
+
+The System Operator Portal was implemented as a web application which provided a seven day chart, including three days of past values, present day real time values and three days of future forecast. An example of such screen is shown in Figure 6.5. System state values shown in the figure include PV generation, battery state of charge, battery charge or discharge rate, grid interchange rate, and loads consumption rate. The portal provides a minimalistic mouse interactive interface for system operators to create the grid limit schedule. The interface allows simple dragging and clicking of polygons to indicate maximum grid import or minimum grid export value. Planned islanding can also be scheduled by dragging the polygon to the top of the
+ 
+chart. Additionally, the interface has a list of predefined schedules which can be utilized for various weather situations.
+
+
+The grid limit schedule including islanding is converted from UI elements to a CSV (comma separated values) formatted file. The file contains a timestamp in local time-zone and power limit pair with positive values indicating export to grid limit and negative values indicating import from grid limit. The time resolution of the data is one minute and the length of data is at least three days. This file is imported by MEM via a fileshare and is used in its energy optimization process.
+
+
+Electric Vehicle Charging Station Demand Response System: The EV Charging Station Demand Response (DR) System allows the EMS to interface with various types of EV chargers or supply equipment and co-ordinates the use of EV chargers by drivers in a manner supportable by OASIS energy available for EV charging. As DEMS plan treats EV charging as a single load unit, the EV Charging Station DR System performs load management on individual chargers.
+Similar to System Operator Portal, the DR system needs to interface with MEM to acquire energy availability information for both real-time and longer term periods, to send load forecasts, and to issue control commands (e.g. starting and stopping EV chargers).
+
+
+Early designs of load forecast generated by the DR system considered EV charging reservations only, and current in-progress charging sessions as loads. Using such forecast, the DEMS model would neglect to account for any upcoming EV charging sessions that were not from reservation, resulting in little or no energy allocated for EV charging when no reservations existed. To
+ 
+mitigate this, load forecast included two load types - a higher priority reserved charging load and a lower priority non-reserved charging load, where lower priority was always curtailed before high priority. For the lower priority load category, an estimation of potential upcoming EV charges, made based on the time of day, was included in addition to non-reserved in-progress charges. This ensured that, should there be available energy within the system, DEMS model would allocate some of it for EV charges that were not from reservations. The estimation of potential load is expected to improve as EV charging usage data is collected once the station is opened for public use.
+
+
+With potential EV charges determined by estimation, data from EV charging reservations and current in-progress charging sessions were required to generate a complete load forecast, which was essentially a time series of power needs by the loads. The BCIT technical team designed and implemented a mobile-focused reservation web application and another web interface for an outdoor kiosk equipped with touchscreen and keyboard located at the EV charging station (Figure 6.6) which EV drivers could interact with. Both applications were designed to be thematically similar in terms of look and feel and share the same account system where EV drivers would be asked to register with their vehicle model and battery age information. This was used to determine the rate of power consumption of a vehicle during charge. For each reservation, a typical fast charging session from 30% battery state of charge to 80% was converted into power consumption for the load forecast. However, when EV drivers would arrive at the station to start a charging session, with reservation made or not, the kiosk system would request the current EV state of charge and their desired state of charge to generate more accurate power needs data for the load forecast.
+ 
+
+
+ 
+
+
+The design of both user interfaces went through incremental changes by BCIT team’s web design specialist. These included graphical improvements, changes in colour choices, and addition of audio or visual cues to enhance usability. Usability tests were also conducted with actual EV drivers, which resulted in significant additional refinements to the EV driver user interface, mainly in the improvement of user attention guidance design elements and the increasing of size of user input fields and control buttons to a kiosk-app-suitable size rather than a PC web-app-suitable size. Fewer and much larger elements on screen were a key to improved usability. Additionally, to assist EV drivers on their decision on charging needs at the Energy OASIS chargers, PlugShare, a database of EV charger locations, was integrated into the kiosk application during development. This enabled EV drivers to visualize available EV chargers on a map. Similar capabilities were also developed using comparable data from other sites, such as here.com.
+
+
+With load forecast, MEM is able to perform energy optimization planning which determines the amount of energy available for EV chargers. The EV Charging Station DR System acquires this energy availability information from MEM to determine load management strategy. If there is enough energy for charging, the DR System is only tasked with enabling the charger and starting the charge when EV driver shows up. However, if curtailment is required, an algorithm is used to determine what actions need to be taken which can be a combination of:
+a.	Reducing the power draw of an individual EV charger (from the maximum 50kW)
+
+b.	Stopping an in-progress EV charging session prior to reaching the driver indicated desired state of charge
+ 
+c.	Disallowing charging on an individual EV charger
+
+The strategy generated by the algorithm adheres to available energy constraint given by MEM while minimizing negative impact on EV drivers. This algorithm is run every minute to ensure the control of the EV chargers is updated as new charging information or energy constraint becomes available. The overall EV Charging Station DR process is illustrated in Figure 6.7.
+
+
+Communication Interfaces: Data communication between EMS components are shown by arrows in Figure 6.3. With System Operator Portal and EV Charging Station DR System both being developed by BCIT and are run on the same piece of hardware, their interface protocol with MEM can be shared. Initially, BCIT proposed a RESTful web service interface for data and
+ 
+commands exchange with MEM. However, the decision was made to use a combination of Modbus protocol and a fileshare (a store-and-forward FTP fileshare with polling for updated files) instead as MEM can more readily integrate with these methods of communication. Modbus protocol is used for obtaining various real time measurement readings and alarms status from MEM as well as issuing commands pertaining to EV charging and DEMS re-planning to MEM (blue arrows). FTP fileshare will be used for transmitting longer term data such as multi-day forecasts and power availability plans (green arrows).
+
+
+As both System Operator Portal and EV Charging Station DR System require Modbus communications with MEM, a gateway program was developed as a protocol adapter to abstract out the communication protocol implementation needed for each process. The original design of the Modbus Gateway creates a new TCP connection to the MEM per request. The process involves opening a connection, making a request, reading the response, and closing the connection. However, during communication testing between MEM and Modbus Gateway, it was found that MEM’s Modbus protocol communication component does not allow multiple connections from the same Modbus master. An additional function to maintain an open connection for identical IP address was added. The first request to MEM will open a new connection, which remains opened. Subsequent request utilizes the existing connection to make request and read response. In the event that the connection is lost due to communication errors, a mechanism re-establishes the TCP connection before continuing with new requests.
+
+
+6.4.	EMS System Integration
+
+As discussed in the previous section and illustrated by Figure 6.3, the integration between EMS
+ 
+and other Energy OASIS components is handled by the Microgrid Energy Manager, which is configured to interface with the PCS, EV chargers and several smart meters connected to loads and the grid's point of interconnection.
+
+
+Communication between MEM and PCS is established via Modbus protocol with MEM as master and PCS as slave. Over 100 signals are read or written between MEM and PCS, implementing the PCS Remote Interface Modbus Register Map, provided by the power system designer. These signals include (but are not limited to):
+•	Alive monitoring
+
+•	Cooling system readings
+
+•	Status (running/stopped), alarm and fault readings for overall system, inverter, battery DC/DC converters and PV DC/DC converter
+•	System readings - voltage, current, power readings for grid and loads etc.
+
+•	Converters readings - voltage, current, power etc.
+
+•	Control settings - start/stop system, enable/disable converters etc.
+
+Battery storage system is integrated with the EMS through the PCS interface with the following signals read or written from the same Modbus protocol implementation:
+•	Control settings – start/stop, charge/discharge set-points
+
+•	Battery capacity learning
+
+•	Status, alarm and fault readings
+
+•	Overall and individual battery group state of charge, state of health readings,
+
+•	Voltage, current, charge and discharge limits
+ 
+Communication between MEM and EV fast chargers is also established via Modbus protocol with MEM as master and EV chargers as slave. Approximately 40 signals are read or written between MEM and each EV charger including:
+•	Status, alarm and fault readings
+
+•	CHAdeMO (EV charging protocol) related readings
+
+•	Charger input power set-point
+
+•	Enable/disable, abort commands
+
+
+Lastly, communication between MEM and smart meters is established via IEC-61850 protocol and are integrated by importing their configuration file. The primary signals monitored from the meters include instantaneous power and total energy readings.
+
+
+An important step in integration is to ensure that all components work together as a whole. This means the functions of the EMS on its own, and together with other Energy OASIS components it is connected to, needs to be verified and validated through testing. First, a Factory Acceptance Test (FAT) of MEM occurred approximatly mid-project with partner and BCIT technical teams present. During this period, MEM HMI user interface screens were reviewed and DEMS energy balancing plans in various use case scenarios were tested. Additionally, communication interfaces, internal between EMS components and external with Energy OASIS components, were examined through ping test and protocol connection. Once the connections were established and verified, requests were made for a subset of signals defined for each interface and responses were validated to conclude a fully functional interface. At the end of FAT period, a list of open points was produced which was addressed internally by technical partner and re-
+ 
+examined during Site Acceptance Test (SAT). This list included points related to MEM HMI adjustments, additional signal list implementation, and DEMS refinements.
+
+
+A 4 weeks commissioning and SAT period occurred on site with all technical partners and BCIT team present. During this time, all Energy OASIS components were physically installed on site at BCIT. For the EMS, a standard 19-inch server rack, which housed all the hardware and software components (except reservation application) that comprised it, was installed in the control centre next to the battery storage room. This location was selected such that the server rack could be electrically connected within the islandable portion of the system to ensure supervisory controls would continue to be powered by the system in the event of unintentional islanding (e.g., power outage). A separate server was used for the reservation application as a security measure since it was accessible via public domain. Firewalls, VPN, and router configuration would then permit only a single narrow communication channel between the external reservation app server and the EV Charging Station Demand Response System operating on the server in the control centre.
+
+
+After installation, SAT occurred where a comprehensive list of topics were tested and verified. First, hardware equipment and MEM software were verified to be operational with confirmation of valid software licenses. Full communication and signal testing between MEM and PCS, MEM and EV chargers and MEM and BCIT EMS components was performed. MEM HMI screens were reviewed and functional elements (e.g. button presses) were verified. The complete DEMS energy optimization workflow was tested which included:
+I.	File data transmission to and from MEM via fileshare FTP
+ 
+II.	Automated (15 minutes cycle), manual (HMI button press), and remote (command issued by BCIT EMS software) DEMS planning process
+III.	Examination of DEMS energy balancing plan generated for various operating modes - grid supported, grid supporting, grid neutral, planned islanding
+
+
+With the EMS and other component of Energy OASIS tested and validated individually on site, a list of system functional and solution use case was performed towards the end of commissioning period. This major step was necessary to demonstrate Energy OASIS capabilities to meet project objectives, where the EMS plays a vital role in. A test plan was developed prior to this period and includes the following test cases:
+i.	Storage and later use of PV for EV Quick-Charging with No Impact on Grid
+
+ii.	Support Loads During Power Outage
+
+iib.	Support Loads Until Unable During Power Outage
+
+iii.	Intentional Islanding – EV Charging Using BESS Storage iiib.	Intentional Islanding Until Unable to Continue
+iv.	Optimal Dispatch of Energy in a Microgrid
+
+v.	Fault Handling at the System Level
+
+The conditions for each test scenario were created, manually if necessary. For example, limiting PV generation during a particular period both in forecast and real time values or opening a breaker to mimic power outage. DEMS plans were examined to verify their logic and the planned flow of energy was as intended by the test case. After DEMS plans were verified, the test case scenarios were allowed to run. BCIT technical team observed the behavior of the system and recorded various monitored values. These were compared with the expected results
+ 
+of the test plan to ensure the system demonstrated project objectives. Since the EMS was the central controller of Energy OASIS, passing these test were vital in showing a successful integration. (See Section 9 for details on Testing)
+
+
+6.5.	Lessons Learnt
+
+Among the design, implementation, integration and testing stages of Energy OASIS EMS, numerous challenges, some unforeseen, were met. Overall, it was difficult to do iterative development in a mixed hardware equipment and software project (e.g. time consuming, expensive), especially when partner teams were spread out geographically. Hardware equipment was required to be commissioned before software testing and iterative refinement could occur. Development of EMS in parallel with hardware components based on agreed upon but not finalized interfaces with minimal integration testing throughout the project was problematic.
+Control and monitoring interface specification of how MEM should interact with other system components changed substantially during project execution due to changes in design team and late discovery of constrains from off-the-shelf control components. Additionally, control interfaces, energy model and cost model, were not finalized until very late in project execution, which resulted in time crunch in the implementation of MEM. All these led to time reduction in system level testing with EMS during the commissioning phase. What was needed was more frequent testing between components that interact with one another, over Internet if necessary, during the development cycle. Interface requirements needed to be firmly defined and adhered to strictly by both the provider of the interface and the party using it.
+
+
+In terms of the energy optimization and control functionality, MEM has certain deficiencies and
+ 
+could hardly be a perfect fit for Energy OASIS. Moreover, the key objective of DEMS was to manage energy exchange between microgrid and local distribution grid (point of interconnection). This differed from Energy OASIS's objective which was not to curtail PV if generation was higher than grid limit target, rather to firm PV if generation was low. Often, grid limit from System Operator Portal was interpreted as hard limit instead of upper or lower bounds in DEMS, causing the constant change in battery set-point when PV was fluctuating. Moreover, DEMS energy optimization and load control time period of 15 minutes were both too long, when compared to PV fluctuation which occurred every few seconds. DEMS was also inherently unable to deal with significant load changes, which within the context of a Microgrid could happen instantaneously. This lead to control set-point oscillation and unstable control. One minute power correction cycles alternate the charging and discharging of battery rapidly which would not be ideal for battery longevity. Many of these control decisions made by MEM resulted in over utilization of the battery system. One potential solution to this was to add in a cost in DEMS model for the use of battery system which was separate from the cost of power related to battery charging and discharging. The command to charge or discharge regardless of the power set-point would increase the price of that control decision. This one time usage cost would discourage cycles between charging and discharging of battery due to fluctuation of PV. It was easy to view the optimization of a microgrid just as the control of power flows between its components when in fact many other characteristics such as usage frequency, efficiency, conversion loss should be under consideration as well.
+
+
+As discussed, potential EV charging load was regarded as lower priority load in the load forecast at all times. This caused DEMS to create an energy balancing schedule that was often
+ 
+unachievable as that load was rarely realized. The adjustment made by DEM regarding the excess energy allocated for load was to charge the batteries. Again, this contributed to the over utilization of batteries but was potentially fixable with the addition of usage cost. Furthermore, the lack of existing EV charging power consumption data made EV Charging Station DR load management algorithm inaccurate. Iterative adjustments were required as charging information was obtained while the system was being commissioned and tested but seasonal weather changes also affected EV battery and charging performance. Additional on-going refinement for this portion of the DR system is necessary. However, even with accurate charging data, there was difficulty in evaluating load management strategies in terms of negative impact on users without having actual EV drivers' inputs or extensive use case testing. This highlights the importance of the inclusion of users (EV drivers) in design process.
+
+
+As Energy OASIS has been running for more than a year, some challenges were discovered with its daily operation via the EMS. During the planning stage, some alarms were misinterpreted as vital in healthy operation of the system and were included in the high level system operator notification system. As a result, system operator was flooded with potentially insignificant alarm e-mails. One particular type of alarm was an alert related to close-to-full battery state of charge. As mentioned earlier, this occurs frequently due to the nature of control by the EMS. These routine alarm e-mails may potentially suffocate important alarms or faults which could delay corrective action by an operator and possibly harm the system.
+
+
+Lastly, the operation of Energy OASIS through MEM HMI, shown in Figure 6.8, is complex and requires specialized training to operate or troubleshoot. Additional operation automation and UI
+ 
+simplification would be needed to enable wide scaled deployment of microgrid EV charging station (similar to gas stations).
+
+
+
+It can be said that the EMS is not complete even after being integrated into Energy OASIS, especially when relatively new technologies, such as the EV fast chargers, are involved. As ongoing operational data become available, it may show unexpected behaviours resulting from the way the system is controlled by the EMS. It is important to capture this data and analyze it to understand the reasoning behind those behaviours. From that, refinements can be made to the EMS to improve its decision making processes in the control of the smart microgrid.

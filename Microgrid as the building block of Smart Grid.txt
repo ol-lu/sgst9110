@@ -1,0 +1,293 @@
+1.	Microgrid as the building block of Smart Grid	
+Environmental, economic and political issues in the latter half of the last century have made it challenging for the Electric Utility industry to continue with the status quo. Rising cost of primary fuels is increasingly challenging the sustainability of generating power out of fossil- based sources in the long run. And given the role that fossil fuels play in electricity generation across the world, the utility industry’s baseline costs and carbon foot prints are on the rise. At the same time and since tariffs for the sale of electricity to consumers, set by utility commissions across most jurisdictions in the developed world, have not changed, the utility companies face reduced revenues and therefore tighter operating budgets.
+
+
+This means that utilities are unable to invest in the upgrade and modernization of their aging infrastructure, which has well passed its useful life span. Aging infrastructure reduces system reliability and efficiency, which in turn translates into higher technical losses and even lesser revenues for the utilities. And while supply is under pressure, demand for electricity increases unabated due to mass electrification of life and economy. It is in that context that the reliability of the largest-ever manmade machine, and the marvel of engineering progress in the last century,
+i.e. The Electrical Grid, diminishes to a degree that errors and anomalies in one part of the system cause mass domino failures in the entire network. Black-outs experienced in eastern US and Canada in 2003, and parts of Europe in the same year, affecting millions of people and costing billions of Dollars, are but examples of how critical it is to address the reliability issues of the system sooner than later.
+ 
+has begun looking beyond current technologies towards a future in which such issues would be resolved. That future is called Intelligent Grid or Smart Grid. In the Smart Grid of future, Generation will not follow Consumption (as is the case today). In other words, when demand rises, the preferred solution would not be more generation. Rather, the utility will look at gaining more efficiency with their existing assets (i.e. minimizing losses), managing end-user demand (i.e. load control) and partnering with consumers to roll-back the load (i.e. conservation). All of these approaches will ensure that Consumption follows Generation. That is a fundamental change of paradigm. Smart Grid of the future will be able to optimize the use of its assets, reduce losses, curtail unnecessary load and ensure sustainable rationality between what could be economically generated and the load which has to be serviced. And all of that has to be done with pro-active commitment to environmental stewardship. The latter requires the industry to invest in renewable sources of energy, and facilitate green co-generation.
+
+
+The problem however is that transition will not be smooth by any stretch of imagination. In the absence of mature technologies, inter-operable standards and exhaustively qualified solutions, cash-strapped utility companies cannot afford taking the risks involved in upgrading their electricity grid overnight. These companies provide a critical service to the society, which cannot be put into jeopardy by rushing through the transition from the legacy grid to Smart Grid.
+Instead, the industry in the developed world is taking steps to modernize the grid through strategic and gradual implantation of fully validated Smart Grid functions and features into the legacy system.
+ 
+Strategic Smart Grid Roadmap, which identifies what functions are needed when and how these should be integrated with the larger system at hand. In other words, given the financial resources available to utility companies, the industry in the developed world has already begun adopting technologies for generation diversification, optimal deployment of expensive assets, demand response, energy conservation, reduction of industry’s overall carbon footprint, etc. It is apparent that in this particular case, utilities in the less developed world have a clear advantage compared to their counterparts in the developed world. They do not have a legacy system to worry about.
+In other words, they could start their Smart Grid implementation as greenfield projects. Removing the requirement for backward compatibility with the existing grid, provides such utilities with a straightforward, and a less costly path to Smart Grid.
+
+
+1.1.	Introduction to Smart Grid
+
+The existing electricity grid is unidirectional in nature. It is practically built as the required plumbing to transport and distribute power from where it is generated (mainly far from load centers) to where it is needed by consumers (load centers). In other words, the existing grid is essentially a large pipe which connects Electricity Generators with Electrical Loads.
+
+
+This large pipe assumes different forms and uses a variety of complex technologies to ensure highest efficiency in the process of converting the power contained in the primary sources of energy into electricity, and subsequently minimal losses in the process of transporting and distributing that energy to the consumers. Nevertheless, the existing electricity system at best converts only 1/3 of primary fuel energy into electricity without recovering the waste heat which
+ 
+transmission lines, while 20% of its generation capacity exists merely to meet peak demand only (i.e. 5% of time). In addition to that, due to hierarchical topology of its assets, the existing electricity grid suffers from domino effect failures.
+
+
+The next generation electricity grid, known as Smart Grid (or Intelligent Grid) is expected to address the major shortcoming of the existing grid. In essence, the Smart Grid needs to provide the utility companies with full visibility and pervasive control over their assets and services.
+Smart Grid is required to be self-healing and resilient to system anomalies. And last but not least, Smart Grid needs to empower its stakeholders to define and realize new ways of engagement with each other and be proactive in various forms of energy transactions across the system.
+
+
+ 
+
+
+
+To allow pervasive control and monitoring, Smart Grid is emerging as a convergence of Information Technology and Communication Technology with Power System Engineering. Figure 1.1 depicts the salient features of Smart Grid in comparison to the existing grid. Such side by side comparison of the exiting grid with Smart Grid reveals that these entities use different hierarchies, technologies and command/control strategies. In particular;
+-	The exiting grid traditionally uses electromechanical switchgear, while Smart Grid will see the replacement of such components with equivalent digital components.
+-	For the most part, the exiting grid relies on limited communication with its field components, capturing few sensory data, status and alarms from the field and applying limited remote control over some of its gear. Smart Grid, on the other hand, is characterized by the flow of extensive sensory data from across its network, supplemented with two way communication, command and control of its major assets and sub-systems. Such pervasive control allows Smart Grid to detect failures much faster and take immediate and appropriate actions to “heal” the situation without the need for operator intervention.
+-	Failures in the existing grid normally create a domino effect, causing major blackouts. Smart Grid, in contrast, boosts its system reliability by quickly isolating and islanding faults and therefore protects the rest of the system from inevitable interruptions which may happen due to component failures, system mal-functions and/or environmental conditions.
+-	The existing grid is characterized by large Generators, often placed far away from load centers. In contrast, Smart Grid facilitates co-generation and integration of renewable
+ 
+sources of energy into its network. In other words, Smart Grid has a much more diverse generation portfolio than the existing grid.
+-	The existing grid delivers power to a termination point and as such has no interactions with what lies beyond that termination point. In contrast, Smart Grid empowers all those who are involved in energy transactions across its network to play a role in improving the service, boosting its efficiency and reducing its load. In the short term, this involves consumers. While in the long term, this may potentially involve consumers and their intelligent appliances.
+
+
+Increasing Capabilities: Given the fact that the roots of power system issues are typically found in the electrical distribution system, the point of departure for grid overhaul is firmly placed at the bottom of the chain. This is the area that traditionally have seen very little investment by utility companies. In other words, while the existing electricity grid has incorporated many modern technologies and increasing complexity in its power plants, control centers and transmission infrastructure, the same can not be said about the Distribution System. 
+
+
+As Figure 1.2 demonstrates, utilities have begun investing in Distribution Automation as the precursor to achieving increasing capabilities overtime. The expectation is that investments in the distribution network shall enable utilities to employ the required applications (e.g. Energy Management, Outage Restoration, Distribution Automation, etc), in their back-office environment. Although the scenario seems straightforward, the difficulty is in choosing the right end-to-end communication and command and control technologies, as well as the analytic technologies required to manage the inordinate amount of data (also known as big Data) which will be generated in the process. This is an iterative exercise, in which each target application
+ 
+will determine the nature, volume and frequency of data it needs to function.
+
+
+Those parameters are what Communication Engineers require to design and implement an appropriate End-to-End Communication plumbing. Such plumbing is quite expensive in terms of cost, installation and commissioning, and is therefore expected to serve the Utility for many years to come. However, the absence of much needed clarity of the requirements of future Utility Applications makes it almost impossible to have full confidence in the ability of the chosen communication technologies, protocols and standards to be able to meet all the functional requirements for utility’s future Smart Grid capabilities and applications. That is one of the major impediments which could potentially slow down the emergence of Smart Grid and the flow of utility investments to realize it.
+
+
+1.2.	Smart Grid Evolution
+
+Given the role the electricity grid plays in the day-to-day life and economic activities of societies, it is hard to imagine that it will undergo a fundamental change in the short term. This notion is further accentuated when one considers the level of development and maturity of the technologies required to build Smart Grid’s relatively complex functions and capabilities. As such, it is understandable if Utilities adopt a gradual and phased approach to incorporating Smart Grid’s capabilities and functions into their existing networks.
+
+
+It goes without saying that in addition to satisfying Utilities’ cost benefit requirements, such capabilities and functions have to pass the litmus test of technical/operational maturity, upstream/downstream interoperability and backward-compatibility with the legacy grid.
+ 
+Within the context of these new capabilities, communication and data management play an important role. These basic ingredients enable the utilities to place a layer of intelligence over their current and future infrastructure, thereby allowing the introduction of new applications and processes in their business.
+
+
+
+
+Convergence: As Figure 1.3 depicts, the convergence of Communication Technology and Information Technology with Power System, assisted by an array of new approaches, technologies and applications, allow the existing grid to traverse the complex, yet staged, trajectory of architecture, protocols and standards towards the Smart Grid. In other words, the
+ 
+fusion of Communication Technologies and Information Technologies into Power Systems, allows each Utility to determine the appropriate Smart Grid system architecture which fits their service requirements, asset mix and generation portfolio.
+
+
+Consequently, no two utility companies may adopt the same architectural approaches to building their Smart Grid. Each utility, influenced by their jurisdictional territory, service parameters, business targets and peculiarities of their legacy grid, will determine the mix and scope of Smart Grid functionalities which they will develop, the time frame for their roll-out and their integration methodology and development roadmap. Those are the required parameters which will determine the topology of the new system, the command and control technologies it requires and therefore the protocols and standards needed to ensure their seamless integration.
+
+
+While emphasizing the core technologies of Communication, Information and Power Systems as the basis of any and all Smart Grid systems, Figure 1.3 captures an array of Smart Grid functions as an example of what utilities will have to consider in their quest to gradually transform their legacy electricity grid towards their desired Smart Grid Systems.
+
+
+In practice, however, technological innovations, or lack thereof, will determine the pace of that transformation. Nevertheless, as the backbone of the power industry, the electricity grid is now the focus of research and development of new technologies. Utilities in North America and across the world are taking solid steps towards incorporating these new technologies in many aspects of their operations and infrastructure.
+ 
+
+
+
+
+Transformation Pyramid: As discussed, each utility will have to define and plan its own journey through this complex process. At the core of this transformation, is the need to make more efficient use of current assets and infrastructure. Figure 1.4 shows a typical Utility pyramid, where Asset Management is at the base of Smart Grid Development. It is upon this base, that utilities build the foundation of Smart grid through careful overhaul of their IT infrastructure, Communication technologies and Circuit topology. Therefore, each utility shall have to start with a fundamental business case, meant to justify the required investments. And then move through a process of upgrading its fundamental assets with the capabilities required to
+ 
+support the desired functionalities in short, medium and long term.
+
+
+Making such detailed analysis, involves an iterative process in which top-down and bottom-up analysis need to be done to determine, specify and size up the constituent technologies required to build such pyramid. Without a doubt, this involves lateral and vertical integration among various Smart Grid capabilities and functions, some of which may not even be on the radar screen of the utility yet.
+
+
+As an example, Figure 1.4 shows that the fundamental business objective of the utility in question is Asset Management. In other words, the utility has to have a well-developed business case which demonstrates that Smart Grid would be able to boost the productivity and efficiency of its current assets. Given the typical value of such assets, that justification is often used carefully in the North American power industry.
+
+
+Having established the required foundation, the utility can now plan for the next layer of sophistication to be introduced into its system. As Figure 1.4 shows, the foundation layer includes New Automated Substations and Feeders, end-to-end Telecom Networks, as well as the required enterprise applications, such as GIS (Geographical Information Systems), CRM (Customer relationship management), etc. Smart Grid’s fundamental applications, such as Substation Automation, Distribution Automation and Smart Metering Infrastructure (AMI) can then be built on top of this foundation.
+
+
+It goes without saying that if the foundation technologies and fundamental applications are not
+ 
+designed with the forward looking view and consideration of the requirements of future Smart Grid applications, the pyramid can never be cost-effectively completed. In other words, the Smart Grid’s foundation and fundamental applications could either enable or impede (depending on how well they are designed) future integration of a wide variety of more complex applications with a fully operational system.
+
+
+As discussed, the organic growth of this well-designed layer of intelligence over utility assets, enable Smart Grid’s fundamental applications to emerge. It is interesting to note that although the foundation of Smart Grid is built upon a lateral integration of these basic ingredients, Smart Grid capabilities will be built upon vertical and lateral integrations of the upper layer applications. As an example, a critical capability such as Demand Response may not be feasible without tight integration of Smart Meters and Home Area Networks. Similarly, Distributed Generation, including renewables, cannot be integrated into the system without Energy Storage. Knowing where a utility needs to be, we now need to determine where we are and as such map out the path which will get us there.
+
+
+Mapping the path to Smart Grid: As discussed earlier, Utility Companies across the globe are at different stages of infrastructure and workflow developments. At the same time, depending on diverse business, technological and operational parameters, each utility may adopt a different mixture of Smart Grid's functions and technologies to meet its investment objectives. That means that neither the point of departure, nor the ultimate destination would be exactly the same for all Utility Companies. In other words, each utility will have to determine its own trajectory for transition from its legacy grid to Smart Grid. Moreover, no two Smart Grid implementations by
+ 
+different utilities may be an exact replica of the other.
+
+
+Having said that, the mechanics involved in mapping out the path to Smart Grid is almost universal. It involves understanding the peculiarities and shortcomings of the legacy system, and planning for interim solutions, within the confines of utility company's constraints and objectives. The mapping process starts with a SWOT (Strengths, Weaknesses, Opportunities and Threats) analysis of the suitability, or lack thereof, the status quo to meet Utility's business objectives. Such analysis should determine what the gaps are, what is needed to address those gaps, what are the priorities and therefore given the known constraints, what functionality needs to be introduced and where.
+
+Figure 1.5 shows the hierarchical nature of the legacy grid, where silos of Generation. Transmission and Distribution are separated by hidden boundaries of command, control and monitoring. Legacy Grid’s architectural hierarchy has evolved over many decades and has served the industry well. The basic premise in this topology is “Load Following”. In other words, each utility has to figure out the “peak load” that each of its feeders has to serve, size up the bulk components in substations which serve those feeders (e.g transformers, switchgear, etc) and aggregate those loads to determine the peak generation and transmission capacity which is required to serve those loads. The system operates around the notion of load forecasting, which determines how much generation needs to be attached to the system to service the “forecasted” loads, and how much transmission capacity needs to be engaged to bring the generated power from power plants to load centers.
+
+
+As such, the Legacy Grid is relatively intelligent as it has to react within fractions of cycles to changes in Voltage and Frequency, the two measurements which demonstrates whether or not the system generation capacity is adequate for servicing the loads. To keep the variations of system frequency and voltage within acceptable bands, a lot of intelligence has already been implanted into the system. However, the main control parameter in this hierarchy is the amount of generation which the system can engage at any given point in time to ensure voltage and frequency stability. Such intelligence requires centralized control through a basic SCADA network, capable of data, command and control transactions.
+
+
+As Figure 1.5 demonstrates, the Legacy Grid has no control over the loads it needs to serve. As
+such, the only information it has on whether or not the engaged generation is sufficient to meet the actual load requirement is the variation on system frequency and voltage. That is the reason why in the past century, the notion of a “Load Following” electricity grid saw no need to match the investments which were done in generation and transmission silos with those done at the distribution network. While the former saw the introduction of multitudes of monitoring, analytics, data networking and command and control functions, the Distribution Network was left struggling with very little monitoring, command and control at the LV substations and an antiquated electromechanical metering system at the termination points (i.e. the customer premises).
+
+
+However, as the load continued its unabated growth, the utilities soon realized that they could no longer keep the safety margin of the system within permitted operational guidelines. Slight anomalies, either man made or nature caused, were blamed for major blackouts across the globe. Erosion of the system’s safety margins, combined with mass electrification and therefore rising demand, compounded with rising cost of production, and stagnant revenues, took away Utility Companies’ financial ability to expand the only parameter at their control to meet the demand;
+i.e. more generation capacity.
+
+
+Moreover, environmental concerns related to the negative impact of GHG emissions as byproduct of fossil fuels, combined with utility’s inability to build more transmission lines to transport the extra power from generation centers to load centers forced the industry to change its fundamental paradigm from “Load Following” to “Generation Following”. In other words, given the inability of utility companies to bring more generation capacity onboard to serve the rising
+ 
+demand, the industry had no choice but to entertain the paradigm shift from “Generation follows Demand” to “Demand follows generation”. That is how the concept of Smart Grid was born.
+
+
+In contrast with the Legacy Grid, Smart Grid advocates “Generation Following”. To do that, Utility Companies need to have an accurate and real-time measure of the constantly changing load which they need to serve. Having real-time information about the load would enable the utilities to adopt various measures to curb the load in line with their existing generation capacity. Such measures could range from financial incentives (Time-of-Use, Maximum Demand penalties, lower tariffs for off-peak, etc) to outright load-shedding (i.e. service disconnect). It goes without saying that the adoption of any or all of such measures are regulated by regulatory bodies in each country and utilities do not have a free hand in imposing such measures at will.
+
+Moreover, the need to have accurate and real-time information about the load, means that the first step which utility companies need to take is to upgrade their Distribution Network. Figure
+1.6 suggests that the first stage in Smart Grid development should begin with replacing the old antiquated electromechanical meters with Smart Meters, capable of two-way communication and control within a much larger intelligent infrastructure, called AMI (Advanced Metering Infrastructure). Here such meters are capable of reporting consumption levels, alarms, events and other power system quality parameters in real time. Such information could be used by the upper analytic tools within the utility back-office network to decide how to price the service and/or
+ 
+how to control those loads.
+
+It should be noted that in early stages of Smart Metering developments, many utilities toyed with the idea of one-way Automated Meter Reading (AMR) technologies, where the meter was expected to send subscriber’s consumption information to a utility head-end at pre-determined intervals. As such, these meters were equipped with one-way communication technologies which meant that they were not able to receive and react to commands from utility head-ends.
+However, the AMR technology was short lived as utilities soon recognized the need to use Smart Meters for Demand Response, Load Control and Service Configuration. As such, the industry required Smart Meters to be capable of two-way communication, resulting in Advanced Metering Infrastructure (AMI) to become the mainstream smart metering technology. As such, AMI is regarded as the first stage in transition to Smart Grid, where the move towards intelligent entities (known as Smart Microgrids), interconnected with a system of distributed supervisory command and control, facilitates the emergence of Smart Grid.
+ 
+
+
+
+As Figure 1.7 demonstrates, AMI enables the next set of capabilities within the Smart Grid space to materialize. The figure suggests that the development of Smart Grid in any given utility will most likely traverse through two distinct, yet inter-related stages; known as AMI and Smart Grid. As discussed earlier, the AMR phase was a historical anomaly which will not be discussed further. Instead, we will focus on technologies and capabilities which characterize the two most prominent stages of this evolution, namely AMI and Smart Grid.
+
+
+The diversity and specification of technologies and their resulting capabilities in each stage will
+be determined by the strategic roadmap of the utility and their priorities. For instance, the AMI sub-system could be implemented as means to automate utility’s billing function only, or it could be designed as a platform to extend the reach of upper layer tools in Utility’s back office into the far corners of the distribution network through establishing two-way communication, distributed command and control and smart sensor networks at utility’s termination points. The decision to limit or expand the capabilities of the AMI system therefore depends to a large extent on the
+cost-benefit analysis which each utility has to conduct prior to committing to such expensive developments.
+
+
+Figure 1.7 shows the expected Return on Investment for technologies in various stages of Smart Grid Development. For example, the availability of AMI data, in one-way transactions, automates the billing system. In other words, if the utility needed to automate their billing environment only, a one-way communication system with such meters would have been sufficient. In such a scenario, Demand Response, Load Shedding or other Load Control functions would not be possible as the AMI system is incapable of receiving and implementing commands from the utility head-end. In contrast, a two-way communication capability with these meters, would now enable the utility to develop some level of control over the service. Demand Response, Outage Detection and Restoration would become feasible.
+
+
+Through AMI, the utility can now allocate maximum demand restrictions on each customer, it can detect if the service is down, or what the conditions of the meter was prior to an outage (Last gasp events) and the status of the network which feeds the service. Such information is critical for detection and timely restoration of outages. The combination of Smart Meters status, alarms
+and Last Gasp messages with Utility’s GIS (Geographical Information System) tools provides a potent platform for Feeder Automation, Outage Detection and Restoration and Asset Management. Similarly, utility’s CRM (Customer Information System) tools will greatly benefit from access to real-time AMI data, providing consumers with valuable information about their service, load profile and consumption habits. AMI enables an informed consumer to play a proactive role in managing their own carbon footprint.
+
+
+Moreover, the ability to communicate with the customer and remotely connect or disconnect their service, enables the customers and utility to engage in different service contracts. For instance, one customer can opt to be on a Pre-Payment contract, allowing the utility to monitor their paid-up credit and warn them if the credit is about to fall below an agreed upon level. The service could then be disconnected by the utility if no further payments are made. This type of service contract is ideal for rental and short-stay accommodations. Remote control of service saves the utility from the cost of dispatching trucks and crew to connect and disconnect a service when renters move in and out of rental homes.
+
+
+In contrast, the exact same system could be used as a post-payment metering system, in which the customer will get regular electricity bills, showing their consumption details on a regular basis. To reduce the cost of meter readings, many utilities practiced quarterly, six monthly or even annual meter readings, while issuing customers with monthly “estimated bills”. AMI saves the utility the cost of meter readings, errors in actual reads, and provides the customers with accurate, on-demand billing data. Moreover, given advanced capabilities for tamper detection built into such meters, utility companies have a higher level of confidence that electricity theft and tampers could be detected and dealt with in real-time.
+While AMI is all about putting new measurement hardware and communication systems at the termination points of the system, the next set of Smart Grid capabilities emerge as the result of tight integration between back-office tools with field components and edge devices. Figure 1.7 shows that capabilities such as Substation Automation, Distributed Generation and Intelligent Homes could only emerge when technologies such as Network management, Intelligent Applications and Distributed Control are integrated with Utility’s downstream field components and edge devices.
+
+
+Consequently, one may argue that given the size and the value of utility assets, the emergence of Smart Grid will more likely follow an evolutionary trajectory rather than a drastic overhaul. The Smart Grid will therefore materialize thru strategic implants of distributed control and monitoring systems within and alongside the existing electricity grid. The functional and technological growth of these embryos overtime helps them to emerge as large pockets of distributed intelligent systems across diverse geographies. This organic growth shall allow the utilities to shift more of the old grid’s load and functions on to the new grid and as such improve and enhance their critical services.
+
+
+These smart grid embryos shall facilitate distributed generation and co-generation of energy. They will also provide for the integration of alternative sources of energy and management of system’s emissions, and carbon footprint. And last but not least, they will enable utilities to make more efficient use of their existing assets through demand response, peak shaving and
+ 
+service quality control.
+
+
+However, the problem that most utility providers across the globe face is how to get to where they need to be as soon as possible, at the minimum cost, and without jeopardizing the critical services they are currently providing. Moreover, what strategies, and what roadmap, should such utilities pursue to ensure that they achieve the highest possible return on the required investments for such major undertakings. And as the case is with the adoption of any new technology, the utilities in the developing world have a clear advantage over their counterparts in the developed world. The former have fewer legacy issues to grapple with, and as such may be able to leap forward without the need for backward compatibility with their existing systems.
+
+
+1.3.	Definition of Microgrids
+
+The notion of gradual transition to Smart grid thru strategic implantation of intelligence within and across parts of the legacy grid was introduced in the previous section. Such embryonic entities include the most basic components of the electricity grid, i.e. power plants and loads, in close proximity. The power supplied by local power plants may or may not be sufficient to meet the demand. As such, these embryos may need to cover the shortfall from the larger grid, if one is available. Due to close proximity between load centers and power sources, no transmission assets would be required. Such an entity, regarded as a scaled down version of the Electricity Grid, is called a Microgrid. Microgrids may also incorporate various degrees of local command and control. The degree of sophistication of the overarching command, control and protection in such systems may identify them as Smart Microgrids.
+ 
+The academic and scientific literature contains many definitions for Microgrids. Although, there are subtle differences between these definitions, they share a fundamental premise; Microgrid is an interconnected system of loads and local generation which can operate independent of power grid (Islanded) or attached to it (grid-tied). Currently, study groups have been convened by IEEE, IEC and Cigre to refine and standardize such definitions from a wide variety of perspectives and different stakeholder requirements.
+
+
+It goes without saying that different stakeholder communities attach different attributes to such definitions. Those concerned about Climate Change insist that Microgrids incorporate renewable sources of generation. In contrast, those concerned about energy surety and reliability insist on Microgrids to have access to firm power. In that regard, given the unpredictable nature of renewable sources of energy, the latter category insist on Storage to be a constituent component of Microgrids to assist with removing some of the uncertainties associated with renewable sources of generation.
+
+
+There are also those who are concerned with Cyber Security who emphasize the inclusion of various layers of defense in the Microgrid against intrusion, cyber-attacks and malware. And last but not least, those concerned about “total cost of ownership” insist on efficiency and optimization to be the hallmarks of Microgrids.
+
+
+The fact of the matter is that all, or some of these attributes are what differentiate different types of Microgrid from each other. We will discuss this in detail in section 1.5 of chapter 1. For now, it should be emphasized that an interconnected system of loads and generators does not
+ 
+necessarily need to be intelligent. In other words, a truly scaled down version of the legacy grid in which no intelligence is incorporated into the system to make it “Generation Following” rather than “Load Following” could still be regarded as a Microgrid, albeit unintelligent. In contrast, a Smart Microgrid is a collection of local loads serviced solely, or jointly, by local generation and the larger Grid, and equipped with a layer of intelligence to achieve desired load management, optimum efficiency, minimum cost and maximum reliability.
+
+
+What sets Smart microgrids apart from the legacy Microgrids is the presence of various pockets of intelligence, incorporated into power generation, load control, load classification, energy management, access authorization, etc. It goes without saying that the level and sophistication of such intelligence defines the presence and/or absence of some of the differentiating attributes discussed earlier in this section. It should be noted that from this point onward, we will use the terms “Microgrid” and “Smart Microgrid” interchangeably. In other words, our focus in the rest of this book will be on Microgrids which have sufficient built-in intelligence, qualifying them as Smart Microgrids.
+
+
+1.4.	Architecture of Microgrids
+
+As discussed earlier, Smart Grid is defined as a grid which accommodates a wide variety of generation options, e.g. central, distributed, intermittent and firm. It empowers the consumer to interact with the energy management systems to manage their energy use and reduce their energy costs. Smart Grid is also required to be a self-healing system. It should predict looming failures in immediate horizon and take corrective actions to avoid or mitigate system problems. Smart Grid also uses information technology to continually optimize its capital assets while minimizing
+ 
+operations and maintenance costs.
+
+
+However, given the gap between where we are today and where we need to be down the road, one can immediately appreciate that the larger problem is the roll out of a highly distributed and intelligent management system, with enough flexibility and scalability capable of not only managing the system’s growth, but also accommodating ever changing technologies in communication, information technology and power systems.
+
+
+On the other hand, given the fact that nearly 90% of all power outages and disturbances have their roots in the distribution network, the move towards Smart Grid has to start at the bottom of the chain, i.e. in the distribution system (including metrology and distribution substations). One should note that although AMI is regarded as the first step towards that eventuality, upgrading the metering system without comparable upgrades to Distribution Substations, edge-devices and distribution networks will not be conducive to systemic development of Smart Grid.
+
+
+Moreover, the argument was made that with rapid increase in the cost of fossil fuels, coupled with the inability of utility companies to expand their generation capacity in line with the rising demand for electricity, the focus on grid modernization has moved towards introducing technologies which can help with demand side management and revenue protection. That clearly means that the next logical step of Grid Modernization has to leverage the existing infrastructure and implement its distributed command and control strategies over its backbone to enable concurrent materialization of two concepts; Energy Conservation and Distributed Generation.
+Utilities hope that through Energy Conservation, while facilitating Co-Generation, the stress
+ 
+level on their assets could be reduced, enabling them to defer the investments necessary to build more generation and transmission capacity.
+
+
+It goes without saying that deregulation of the electric utility industry, environmental concerns associated with the central power plants, volatility of energy cost, and rapid technological developments of DER (Distributed Energy Resources) units, have resulted in a significant proliferation of DER units in the utility power systems. Recent trends indicate continued penetration of DER units in power systems, both at Medium and Low Voltage levels. The latter has been the main reason for justifying investments into Microgrids. It is in that light that a Microgrid is defined as a cluster of loads and DER units, capable of operating either independently or as a slave to the larger grid. 
+
+Figure 1.8 shows the basic building blocks of a Smart Microgrid. At a minimum, these should include various sources of local generation (including renewable sources of energy), various types of loads (exhibiting different load profiles) and networked intelligence. The latter includes the components required to implement the necessary command and control functions in the Microgrid. This highly simplified block diagram emphasizes the fact that the basic components of a Smart Microgrid are integrated through two independent, yet interrelated highways. One is the traditional one-way Energy Flow interconnection which transports power from local power plants to microgrid loads. Another is a two-way data and control highway which collects
+ 
+sensory, alarm and status information from across the Microgrid to be made available to an Energy management System, the output of which are channeled to Microgrid components in the form of commands and configuration settings and/or parameters.
+
+
+It should be noted here that depending on the size of the Microgrid, command and control functions could be centralized or distributed. In other words, the size of the microgrid, the required throughput and frequency of the data and commands which have to be exchanged between different components in the Microgrid may make the choice of a distributed control strategy more compelling than a centralized one.
+
+
+1.5.	Types of Microgrids
+
+Given the role Microgrids play in enabling utilities to gradually introduce Smart Grid technologies into their distribution system, one could recognize the need for controlled interconnection of Microgrids into a much larger system, commonly called Super Grid. In this regard, each Microgrid is assumed to be capable of managing its own loads based on the DER sources available to it, while meeting interconnection requirements (synchronization, protection, power quality, etc) with the larger Grid. Here one needs to emphasize the term “interconnection” rather than “integration” as each Microgrid is empowered to determine its own degree of centralized control and management in response to external stimuli following its own set of operational objectives and requirements. Figure 1.9 demonstrates interconnected Microgrids, each with its own set of loads, DER units and command and control components. Each Microgrid is optimized to deliver a set of unique deliverables and functionalities for the objectives for which it is designed.
+ 
+
+A quick review of the literature reveals that there is not as yet a universally converging consensus among experts on the definition of Microgrids. Some attempt to classify Microgrids based on their size, some take its interconnection, or lack-thereof, with the larger grid as a point of differentiation, and yet others take the application for which the Microgrid is designed to serve as its definition.
+
+
+Nevertheless, and from a size-agnostic point of view, one could see three different types of Microgrids emerging in the industry today. These are in no particular order:
+ 
+a)	Urban Microgrids: These are Smart Microgrids with various loads and DER resources which are primarily identified as Grid-Tied Microgrids, capable of operating in an Islanded mode, if and when required. The need to operate in Grid-Tied mode, imposes certain restrictions and requirements on such Microgrids. They need to meet all codes, standards and interconnection requirements put in place to protect the larger Grid and preserve its power quality integrity. Various applications for Urban Microgrids include Campus Microgrids, Gated Communities and Mall/Shopping Centers.
+b)	Remote Microgrids: These are Smart Microgrids which operate exclusively Off-Grid.
+
+Similar to Urban Microgrids, they have their own set of DER sources, and various types of loads. However, due to the fact that they operate independent of the larger grid, they do not need to comply with the requirements and restrictions faced by Urban Microgrids. In contrast to Urban Microgrids which have grown in numbers in the last few years due to intensive public and private investments, Remote Smart Microgrids are not as yet common. Lack of investments into Remote Microgrids may be due to multitudes of economic, technological and political reasons. Nevertheless, there are numerous remote communities, remote settlements and island communities in many parts of the world which are prime candidates, and could take advantage of Smart Microgrid technologies and systems. An example of such Legacy Microgrids are First Nation Communities in Canada, where power generation is mostly done through Diesel generators.
+c)	Agile Microgrids: Also known as Temporary Microgrids, these are Microgrids designed to be setup, configured and dismantled based on changing operational requirements. Examples of such Microgrids are Distribution Systems for Forward Operating Bases of the Military, Seasonal Events, Disaster Recovery Operations and Field Hospitals. What
+ 
+differentiates this type of Microgrids from the other two is the agility, configurability and flexibility of its operation.
+
+
+Detailed discussions about the characteristics and specifications of different types of Microgrid is outside the scope of this book. As such, in the subsequent chapters of this book, our focus will be on Urban Smart Microgrids, as the Microgrid built on the Campus of British Columbia Institute of Technology in Vancouver is an Urban Microgrid. Consequently, from now on whenever we talk about Smart microgrids, we mean an Urban Smart Microgrid with the main characteristics noted above (i.e. Grid-Tied and capable to operate in Islanded mode).
+
+
+1.6.	Interaction of Smart Microgrids:
+
+Preceding discussions have shown that the only type of Microgrid which could be regarded as the constituent component of Smart Grid is an Urban Microgrid. That is simply due to the fact that Urban Microgrids are designed to not only operate in an islanded mode, but they are also required to be capable of interconnecting with their neighboring Microgrids as well as the larger grid as the building block of a much larger system (Super Grid). It goes without saying that neighboring Microgrids, of any type, could potentially interact.
+
+
+However, the interaction of multiple Microgrids introduces operational challenges related to fast transients produced as a result of switching of generation and/or load assets, as well as slow transients as a direct result of scheduling of generation assets. Consequently, to ensure the safety and security of interconnection, one of these Microgrids have to impose its interconnection parameters (e.g. frequency, voltage level, etc) on the other. And in the absence of the larger Grid,
+ 
+whose operational parameters will drive interconnections, one cannot guarantee safe and secure operation of such interconnected Microgrids.
+
+
+In other words, the presence of the Grid is the most critical pre-requisite for the integration of Smart Microgrids into an eventual Super Grid. It should also be noted that poorly designed and constructed Microgrids could have serious adverse impacts on the stability of the larger grid with which it is interconnected. In particular, the Microgrid has to put provisions and assets (e.g.
+Storage) in place to firm up the intermittent power generated by its DER units (e.g. solar and photovoltaic) units. Furthermore, the Microgrid has to shield the larger grid from issues related to diverse response times of the particular generation units it uses to control commands and fault scenarios. Moreover, given Microgrid's relatively low inertia, the Microgrid is responsible to deal with its susceptibility to large excursions from the initial operating conditions.
+ 
+
+As Figure 1.10 stipulates, what that essentially means is that the major role that the Super Grid of the future will play would be to impose global service quality parameters on all interconnected Microgrids in its network. Those global parameters shall ensure successful interconnection and energy transactions between different Microgrids in that network. Such parameters shall not only regulate the electrical boundaries of the Microgrids, it will also impose operational and performance parameters to facilitate transactions. In other words, regulatory and quality of service issues will determine the success of such interconnected Smart Microgrids.
+ 
+The question now becomes what impact could or should such parameters have in the design, architecture and implementation of Smart Microgrids. In other words, could Smart Microgrids be further classified based on their level of “interconnect-ability”? The answer to that rhetorical question is affirmative. In fact, Urban Microgrids have to be designed to be “interconnect-able”. Without interconnectivity with the larger grid, Smart Microgrid concept reduces to integration and limited control of DER units with loads they serve. Such Microgrids could therefore not be regarded as the building block of Smart Grid.
+
+
+To be qualified as a constituent component of Smart Grid, Microgrids have to incorporate technologies which enables them to monitor, diagnose, protect and comply with the operational parameters and quality requirements of a much larger system through coordinated command and control, and power management. Provided that the Microgrid meets the aforementioned requirements, it could be defined as a cluster of Distributed Energy Resources (DERs) that are locally controlled and behave, from the perspective of the main electricity grid, as a Generator and/or as a Load.
+
+
+The other important consideration for the implementation of Smart Microgrids is the economic justification of the investments required to build them and operate them. That issue is not often a straightforward calculation. Depending on the objectives for which the Microgrid will need to be designed, many parameters have to come together to justify such investments. For example, in one instance the main objective would be to lower the cost of electricity, in which case one has to ensure that local power generation could be achieved cost effectively and within environmental constraints. Or the issue may be reliability of the supply from the main grid, in
+ 
+which case one has to complement the energy from the main grid with firm and reliable energy produced locally. All in all, access to cost effective, environmentally friendly and reliable sources of energy locally will be the cornerstone of Microgrid design.
+
+
+One should emphasize that in jurisdictions such as British Columbia, where more than 90% of the energy produced is from renewable sources (primarily hydro), and where the cost of energy is kept low as a result of regulatory pressure, it would be difficult to justify investments into Urban Microgrids. Factors which may have a deterministic impact on the feasibility of setting up Microgrids in such jurisdictions may include, among other things, contribution to the energy supply and energy security, the supply power quality and environmental impacts. Furthermore, in certain instances, the need for ancillary services may take the center stage. These include provisions for reactive power generation, voltage regulation, reserve, and black start capability.
+
+
+Having said that, the availability of low cost LNG (Liquid Natural Gas) or Shale Gas across North America may trigger feasibility studies to construct Microgrids in fast growing suburbs where the main grid may not be able to support population and economic growth without major upgrades to its generation and transmission capacity. Given that building new mega power plants, and punching transmission corridors into built-up urban areas may not be feasible, Urban Smart Microgrids, powered with local LNG/Shale Gas Power Plants, may be an optimum solution to support suburban growth.
+
+
+In contrast to LNG and Shale Gas, the cost associated with power generation out of renewable sources, such as wind, solar and biomass has not gone down sufficiently enough to enable such
+ 
+sources to compete cost effectively with fossil fuel based generation, unless GHG emission consideration could impose otherwise.
+
+
+It goes without saying that even if Microgrids could be economically justified, inclusion of technologies required to facilitate and regulate the interconnection of Microgrids and the management of the energy flow between them will become further points of contention. Such technologies would add to the construction and operational cost of Microgrids, and unless a clear strategy, roadmap and justification for their interconnection are available, the additional cost of incorporating those technologies into the Microgrid will become a major question mark.
+
+
+It goes without saying that experiences accumulated as a result of research and development into microgrids can add tremendous value to the utility industry’s playbook, and determine, inform and qualify the next needed steps, developments and investments by stakeholders in removing obstacles against the integration of Microgrids, and therefore the emergence of the Super Grid, in the not too distant future.

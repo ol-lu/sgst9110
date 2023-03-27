@@ -1,0 +1,150 @@
+11.	Campus Microgrid Lessons Learnt
+
+This Chapter discusses lessons learnt in the context of the Campus Microgrid research development and demonstration activities, which can be replicated in other broad reaching applications microgrids. Achievements versus expectations, as well as unforeseen challenges, will be discussed using experiences from the Campus Microgrid. Moreover, opportunities for leveraging these lessons in other microgrid contexts will be presented. The chapter examines the lessons learnt during the operation of, and ongoing research activities in the Campus Microgrid, including discussion of the role of microgrids in education, and concludes with a summary of recommendations and next-steps towards broader-based applications of microgrids.
+
+
+11.1.	Learning by Doing
+
+It should be noted that at the outset of our endeavor to build a microgrid, the endpoint wasn’t completely clear. We had ideas about how a microgrid should look like, but its exact specifications, features, capabilities and integration with the larger grid had to be further developed. In that regard, we capitalized on our close working relationship with our local utility company, BC Hydro. As the major stakeholder of this initiative, BC Hydro assigned its experts to work with us and define the framework of a joint BCIT/BC-Hydro Smart Microgrid. This was done thru a series of retreats, bringing experts from BC Hydro and BCIT together to discuss overlapping interests and opportunities.
+Given the fact that at the time when these discussions began (March 2007), the concept of Intelligent Microgrids was in its infancy, in early retreats with BC Hydro and BCIT there was much debate about the definition of a microgrid. Was it simply a genset and load? Was islanding required? What exactly made a microgrid intelligent? These discussions over a period of 6
+ 
+months resulted in a joint Strategic Technology Roadmap for Smart Microgrids. Detailed discussions about the structure of that roadmap was included in Chapter 3, Section 4 of this book. Suffice to say here that despite the clarity and sense of certainty which such roadmaps tend to provide, we have gone through a great deal of learning since then, and that learning was accomplished simply by doing. Our specifications gradually came into focus as we moved along, and were shaped by what was feasible, regulations in place in our jurisdiction, availability of willing partners to join us, and our deeper understanding of the requirements of an intelligent microgrid.
+
+
+We found that anyone interested in microgrids purely from a ROI perspective is misguided. The application of a microgrid determines ROI. For example, at UCSD (University of California in San Diego), natural gas powered generation is used to displace loads where tariffs run roughly 30 cents per kWh. Here in BC, the cost is closer to 7 cents per kWh where a BC Hydro feed is available, but much higher in isolated off-grid communities that rely on diesel gensets. That is why UCSD’s microgrid focus (which began almost at the same time as ours) was on addressing energy costs of the campus, and as such was championed by UCSD’s Facilities Dept. In contrast, given the extremely low electricity tariffs in the Province of BC, investments in a microgrid could hardly be justified purely thru an operational ROI. For that reason, BCIT/BC-Hydro’s Microgrid focused on research and creation of know-how around Microgrid technologies, and as such was championed by researchers and faculty. Moreover, the microgrid was further developed as a test facility to enable researchers and entrepreneurs alike to generate ideas, develop and test novel approaches and products, and understand the merits of microgrid concepts and components and their relationship to the larger Smart Grid.
+ 
+
+
+11.2.	Achievements vis-à-vis Expectations
+
+In a small microgrid, large load swings, and renewable generation uncertainties (i.e. deviations from forecast) are common and occur in sub-second timeframes. As such, a microgrid energy management system for small microgrids should be capable of re-optimizing energy use and power flow at sub-minute time scales, and should be capable of adaptive power flow control on time scales no longer than several seconds. The EMS technology employed in Energy OASIS microgrid was more suited to balancing of large regional electricity networks with large renewable energy farms. The EMS was initially required to perform once-per-day power flow planning, which was soon changed to once per 15 minutes. This planning granularity was insufficiently agile to keep up with spontaneous unexpected load or unexpected drop in PV generation, so the saliency of the EMS power flow plan was limited.
+
+
+In a small microgrid, detailed energy models of power sources, sinks and losses are needed by the EMS, to allow true optimization of energy-cost and power flow control. EMS planning and power flow control in a small microgrid should account for losses such as alternating current /direct current and direct current/ alternating current conversion losses, battery climate control, battery self-discharge, and standby losses of power subsystems and microgrid loads. The EMS developed for Energy OASIS was not configured to account for such small-microgrid concerns, but rather assumed a simplified energy balance model without modelling of losses. The use of power in the microgrid has to be modelled more accurately in the next iterations of our EMS. Further accuracies in this area shall lead to more optimal energy optimization and power flow control.
+ 
+As a side benefit of a detailed energy and energy-losses model in the EMS, EMS energy-cost optimization logic could seek to minimize standby power losses (phantom load) by techniques such as:
+•	switching off load feeders upstream of transformers if possible
+
+•	turning smart power systems (such as bi-directional inverters) down to their lowest standby STOPPED operating mode during planned intervals during the day when power conversion is not needed.
+
+
+The Energy OASIS system will benefit from more refined EMS models and optimization logic which may further reduce standby power losses thru smarter and more agile equipment control decisions.
+
+
+11.3.	Unforeseen Challenges
+
+Complex projects of this nature will typically encounter a number of unforeseen challenges and deviations across their life-cycles. These kinds of challenges, are by their nature, impossible to predict and can severely impact their success. These challenges occur even in projects that use proven technologies, clear specifications and mature components. In the case of microgrid projects, some of the factors contributing to these challenges can be attributed to the novel ways in which novel technologies may be required to integrate and operate to provide a solution for unique locations, consumers, and other seemingly disparate requirements. Challenges are further exacerbated by the lack of regulatory and technical standards, policies, and related. This section summarizes some of the unforeseen challenges encountered and mitigated during the Campus Smart Microgrid project.
+ 
+
+
+Project Planning, Coordination and Management Challenges:
+
+Design and realization of a complex system, using a consortium of diverse partners with different corporate cultures, work-flow processes and technologies is extremely challenging. Aside from technical challenges in integrating such diverse technologies, the development team learnt the following valuable lessons:
+•	It is extremely important to ensure a smooth transition and handover between various groups and teams within partner organizations. For example, in some cases, commitments made by technical design teams were not properly communicated with implementation teams within the same organization.
+•	The need to negotiate and conclude a role & responsibility matrix upfront. Any ambiguity in who is responsible for what in the early stages of the development can cost the project valuable time and efforts later on to elaborate and identify.
+•	More time spent at the system design phase will help with smoother transition between various stages of the development. In particular, detailed specification of each and every component upfront can be extremely beneficial to the overall project schedule later on.
+•	It is critical to enquire with each and every partner the specific definitions which different companies have for the same objects, implementations and flavors of the same standards. Confusions which can arise in the debugging phase due to seemingly similar, but different definitions for the same parts of the applicable standards could be extremely time consuming.
+•	Discussion about partnerships, different agendas make it difficult to focus on selection of most appropriate technologies and needs versus wants.
+ 
+Site Selection, Approvals, Preparation and Construction Challenges:
+
+•	Original plan for roof-top PV
+
+o	Seismic and space requirements.
+
+o	In general, need to consider regional codes, standards and similar requirements.
+
+•	Approvals
+o	Timelines for permitting and related approvals underestimated. In the Campus Microgrid one of the roof-top solar PV systems had to be installed in such a way as to not penetrate roofing membrane. The engineers designed a ballasted mounting system in which the solar PV panels were mounted on standard racks which were held in place with concrete ballast blocks. The design was new to permitting authorities and required additional time and consideration in order to receive approval.
+•	Construction timelines generally include contingencies. In the case of the Campus Microgrid a number of unanticipated issues ranging from hidden boulders impeding foundation work to difficult cable pulls to delivery delays for components. These contributed to delays beyond the planned contingencies and have underscored the importance of planning and contingencies, for example in the context of remote community microgrids where such delays could become extremely amplified due to location related issues such as transportation of materials, and crew assignment.
+
+
+Unforeseen Design Challenges:
+
+The Campus Microgrid experienced a significant unforeseen design challenge resulting in the need to re-design the racking system for the battery modules in the storage system. This resulted
+ 
+in project time and cost overruns. The original design called for use of a readily available, off- the-shelf rack system. Because it was one of the first battery installations of this size, the requirements for scaling up the number of battery modules in the storage container were not fully understood. During testing in the detailed design phase, it was determined that the original layout of the battery modules led to the modules over-heating. The layout design was changed, resulting in more complex racking requirements which necessitated customized design, manufacture and testing of a new solution. While the new racking system proved successful, due to project time and resource constraints the manufacturing of the new system was largely supported by the design engineers. In this case, the use of design engineers in the build phase was a necessary step, but one which incurred unplanned project costs. Mitigating this issue also resulted in time delays.
+
+
+The lessons learnt from this issue resulted in a novel racking system design which can be applied to future projects, and which has provided engineers with the knowledge to facilitate subsequent builds with lower cost labor.
+
+
+Component Commissioning Challenges:
+
+Unanticipated noise:
+
+In general a number of components used in microgrids have historically been placed inside substations or in locations with no noise impact on the neighboring community. With the OASIS system, the PCS and Container HVAC created noise levels exceeding local city bylaws and caused complaints from nearby residents, and a noise mitigation strategy had to be developed after commissioning.
+ 
+
+
+Manufacturer out of business:
+
+The Campus Microgrid has suffered from manufacturers of various components going out of business, or simply dropping a component from their catalog, leaving that component unsupported.
+
+
+Certification of components:
+
+For insurance purposes, BCIT required that all electrical components be certified by an independent body such as CSA or CUL. Many utilities do not have this requirement, and this can lead to misunderstandings with vendors, and procurement and commissioning delays.
+
+
+System Integration and Testing Challenges:
+
+The ideal situation for a Campus Microgrid, and indeed for microgrids in general, is to be built using proven technologies. However, given the novelty of Microgrids, that is not always possible. The design team was often left with two hard choices; compromise on design objectives in favor of using off-the-shelf components, or stay true to design objectives and expose the design to technologies with potentially novel integration considerations and requirements. That level of customization of major components, particularly the BESS, PCS, and EMS, but also the DCFC units, cost the design team a lot of time and resources.
+
+
+The control integration process for each particular microgrid system must be rigorously managed with central technical integration decision authority and contingency budget allocation authority. Protocol standard adherence is not enough to ensure interoperability of complex power
+ 
+subsystems and smart loads.
+
+
+During the project, inter-subsystem interface specifications were not respected in any detail by some subsystem partners, and the interface specification refinement agreement process was not prioritized by the subsystem partners, in an apparent belief that the interface being formatted according to a certain communication protocol would be sufficient to achieve interoperability. An interoperability incompatibility crunch therefore occurred near the end of the project, resulting in less time available for overall system use-case testing.
+
+
+As a side-effect of lack of interface specification and refinement process rigor, the boundaries of control logic responsibility between one major subsystem and the EMS remained unclear throughout the system development project. This resulted in a number of control logic gaps remaining until very late in the system build, and in some control logic gaps remaining after initial commissioning. For example, which microgrid power subsystem or controller or EMS is responsible for orderly multi-step start up logic; which subsystem is responsible for setting sub- modes of operation within a key subsystem; which subsystem is responsible for setting operating limits; which subsystem is responsible for battery-group charging coordination; which subsystem is responsible for battery capacity learning, cycle logic, and initiation; etc.
+A specific lesson about the integration of smart power subsystems into a unified microgrid control system is that each monitoring and control interface specification (between a pair of interacting subsystems) must be treated as the entire allowable interface between those subsystems. It came to light that one major subsystem offered a control and monitoring interface which included the two control set points and 4 monitoring data points specified in the interface
+ 
+specification, but also offered (and required knowledgeable use of) dozens of other control settings and hundreds of monitoring data points. This was seen by the partner as offering flexibility, but the system integration consequence was that that subsystem was not self- managing, and required another external supervisory control system to understand its internal details. That external supervisory control system did not exist, because the other system's designer assumed (as they were entitled to) that the specified interface was the entire interface. In an integration of complex control subsystems, one subsystem offering (and requiring use of) more control options and monitoring detail than specified in the inter-subsystem interface specification is not a benefit, but a significant problem.
+
+
+The project on-site testing timeline included: component commissioning; system integration; system functional testing; and use-case testing. The intent was that all partners be present on site for the duration of all these activities, requiring members of the technology provider technical teams to be on-site for over 2 months. At various points during this timeline, some of the technical teams were in sit-and-wait mode while other teams were actively testing. From a practical perspective, this kind of commitment was an impossible sell. Partner support teams hailed from North America, Far East, and Europe. It was extremely difficult to get buy-in from partners to stay on-site past the component commissioning, through the system integration and use-case testing. The feeling was that the technologies were installed and integrated and should work. The reality was that implementing the System Use-cases Tests would test the components in ways they may not have been tested previously. Indeed the first year of operations has proved this to be true.
+ 
+Early Integration Testing:
+
+Early Integration Testing (over VPNs over Internet if necessary) of inter-subsystem monitoring and control interfaces is essential, before power subsystem hardware and EMS are on-site. The Energy OASIS project's use-case testing period was burdened because serious incompatibilities in control and monitoring interface protocol details and operating logic were being discovered and addressed in the very last scheduled commissioning period of the system. Smart power subsystem partners and the EMS partner did not allocate sufficient time to mid-project integration testing, having an over-reliance on their adherence to a communication protocol standard, and the consequence was a significant reduction of time available to exercise, refine, and validate overall microgrid system use-cases operation.
+
+
+Managing Final Integration Testing:
+
+Regardless of the reasons for delayed use-case testing of an overall microgrid EMS and control system, such integrated-system use case testing (also known as solution-functional testing) must take place fully, and the tests must pass in order for subsystem partners to be considered complete in performance of their commitments. Subsystem partners would prefer complete performance to be attached to passing an individual site-acceptance-test (commissioning test) of their individual subsystem, but overall-system integration and function problems are certain to occur in a complex smart-subsystems integration, and subsystem supply performance should include successful discovery, negotiation and resolution of whole-system scale control and operating deficiencies.
+Ultimately the system integration testing was completed, some partners remained on-site through the Use-case Testing phase, and others provided support remotely from their home location.
+ 
+OASIS has been operating, with some exceptions, since March 5th, 2014. Ongoing operation has uncovered deficiencies that are addressed as they arise with support from partners via email exchanges. Future projects will benefit by securing partner commitment through a longer system integration and use-case testing phase. And by ensuring that development of operational and maintenance support agreements are explicitly scoped during project planning, and that development of these agreements includes appropriate stakeholder representation.
+
+
+11.4.	Campus Operation & Research Campus Microgrid Operational Learning Curve:
+The Campus Microgrid represents the addition to a living campus of new technologies and processes, and on a fairly significant scale. Operating the Campus Microgrid requires introduction and integration of new skills and processes. There are many operational processes under existing campus infrastructure maintenance routines, but these often require integration of new skills, practices and procedures to match the new technologies. In the case of the Campus Microgrid, new skills and processes were developed by the Research Team through hands-on activities over the life-cycle of the project, and while tackling operational challenges throughout the Campus Microgrid startup and system commissioning phase. Future projects could benefit by applying mitigation activities such as:
+•	Incorporating an appropriate transition and operational plan with stakeholders, during the early planning and conceptual design phase of the Project. This should include developing a shared understanding of current operations and processes, what changes may be required to accommodate the new technologies, and a clear delineation of roles and responsibilities for ongoing operation and maintenance.
+ 
+•	Incorporating a project transition phase at the end of the Project that includes knowledge transfer overlap between with resources from Campus Facilities and Operations, and experts from the technology providers.
+
+
+11.5.	Role of Microgrids in Education
+
+While Microgrids can be tools for education in a variety of roles, there is also a need for awareness and education around subjects relating to microgrids themselves. Microgrid educational subject matter targeting designers, practitioners, utilities, and related stakeholders, will promote working understanding of the design options for microgrids, how microgrids can be operated and managed, particularly under emergency situations, and how to identify threats and manage security incidents such as cyber or physical infrastructure attacks. Street level education around microgrids will promote awareness and understanding at the community level, highlighting the benefits of microgrids such as modernization and reduced dependency on energy sources that require lengthy transportation, improved energy security and reliability during emergencies, conservation and reduced carbon footprint, and enhancement of local economies.
+
+
+11.6.	Conclusions, Recommendations and Next Steps
+
+A key feature of microgrids is that the technologies applied are appropriate to requirements of its loads. Demonstration projects aren’t intended to be financially viable, but consideration of eventual viability factors, such as understanding demand requirements, can influence design choices and provide more robust options for future deployment.
+
+
+The Campus Microgrid has shown how soft and firm sources of energy could be integrated in a
+ 
+distribution environment to provide reliable service for unplanned loads, such as Electric Cars. In the process, OASIS demonstrated the viability of battery energy storage technologies as a means to counteract the intermittent nature of soft power, as well as the role an Energy Management System can play in ensuring the dispatch-ability of diverse portfolio of energy sources.
+
+
+The strong potential for solar PV as a generation source has been demonstrated. In general, grid- scale energy storage must be increased from present-day levels, in order to balance the expected increase in intermittent clean renewable energy sources, and to balance and stabilize the grid.
+A combination of grid-scale energy storage, microgrids with local storage, efficient DC power transmission capable of spanning weather systems, and demand-response control is likely needed to maintain grid stability in the face of the needed significant penetration of intermittent clean electricity generation into the electrical power grid.
+
+
+As alluded to in the ‘Learning by Doing’ section, certain factors that will always need to be considered when broadening the reach of microgrids. Climate, loads, location and access, behaviors, standards and regulatory factors, are all important factors that will have an impact on ROI, and the ultimate success of a microgrid.

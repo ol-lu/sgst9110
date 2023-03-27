@@ -1,0 +1,397 @@
+1.	Campus Microgrid 
+
+As discussed earlier, Campus Microgrid is essentially a Grid-tied or urban microgrid. Other than large industrial complexes, most urban centers in North America host one or more university campuses, organized in the form of a small suburb, with its own facilities, layout and infrastructure. Most such campuses receive their electricity from one or more Medium Voltage feeds from the local utility company. In that regard, campus microgrids are grid-tied microgrids with a diverse and variable load profile. Usually, campus microgrids incorporate residential load profile (i.e. dormitories), industrial load profile (workshops, labs, etc) and last but not least, commercial load profile (i.e. offices, classrooms, etc). From that perspective, campus microgrid can not be studied without taking into account its relationship with the larger grid, of which it is simply a component.
+
+
+1.1.	Lay of the Land
+
+In the face of rising demand for electricity amid increasing costs and environmental concerns related to GHG emissions as a result of fossil fuel consumption, utility companies desire to find ways to better manage demand and integrate renewable sources of energy into the mainstream power system. For example, BC Hydro is attempting to meet 50 per cent of all its future growth in electricity demand through energy conservation. Ontario’s Hydro One have been steadily progressing towards the implementation of an Intelligent Grid to serve 1.3M customers by deploying a standards-compliant communications infrastructure.
+
+
+However, the main barrier to moving forward for these and other power suppliers is the current antiquated nature of the utility’s electricity grid. Designed to cater to a centralized power
+ 
+generation, transmission and distribution system, the grid is inherently incapable of accommodating new technologies and solutions. It is the last remaining sector providing a critical service to customers without having real-time feedback about how its services are utilized by its users. The electricity grid has traditionally operated as an open-loop system where no real-time data has been captured for such things as instantaneous demand, consumption profiles, or system performance. This open-loop system cannot store energy, nor can it integrate renewable (and thus intermittent) sources of energy, such as wind, solar, biomass, and wave/tide. The grid for the new millennium has to be built around notions such as system-wide visibility, pervasive control, diversification of sources of energy (including intermittent renewables), operational efficiencies and energy conservation.
+
+
+Built in the last century, Canada’s electricity grid is a one-way hierarchical system whereby power is dispatched based on historical consumption data rather than to meet real-time demand. As such, the system is over-engineered (by design) to ensure a so called “safety margin’ and as such withstand maximum peak loads, which might not be present at all times. This means that the system’s expensive assets are not efficiently used at all times.
+
+
+However, massive electrification of life all over the world, and rising demand for electricity has quickly eroded that “safety margin”, thus exposing the system to operational failures. In other words, in the absence of that safety margin and when demands exceed the forecasted levels, the system simply fails, resulting in brownouts and blackouts. Such circumstances have come about much faster for the developing world, which have experienced rampant rolling blackouts across many jurisdictions in Asia and Africa.
+ 
+
+
+Nevertheless, electric power generation, transmission and distribution are supported by an electricity grid, which forms the backbone of a typical power network. A grid may reference a sub-network, such as a local utility's transmission grid or distribution grid, a regional transmission network, a whole country’s or entire continent's electrical network. Regardless of the size, extent and complexity of such grids, they share the same hierarchical (and often silo) structure in terms of constituent components of the network. Such grids are essentially designed to be “Load Following”. Worst still, there is no real-time data to indicate what the real load would be at any given point in time. As such, statistical assumptions about the size of the load to be served has to be made by each grid operator. And given the fact that such assumptions become invalid over time, the need for a paradigm shift to transition the grid from “Load Following” to “Generation Following” becomes critical.
+
+
+1.2.	Drivers and Inhibitors
+
+Current centralized grid systems all over the world experience significant power loss through inefficiencies. They are also being challenged by increasing demand, rising costs, tightening supply, declining reserve margins and the need to minimize environmental impacts. At no time in its century-long history has the North American utility industry had to confront so many diverse and concurrent challenges as it does now. In the last few decades, electrical power providers have faced one or more of the following challenges:
+
+
+i.		Aging infrastructure (more than 70% of utility assets in USA are over 25 years old)
+ 
+ii.		Reliability (recent blackouts in California, Northeast USA, and in Eastern Canada)
+iii.	Security (researchers have proven that the US electrical grid is prone to attacks)
+
+iv.	Market dynamics (various jurisdictions are moving towards industry deregulation)
+
+v.		Rates and pricing (need to implement multi-tariffs, time of use, smart metering, etc.)
+vi.	Distributed generation (need to allow access to the grid by IPPs & Co-Gens)
+
+vii.	Efficiency and optimization (need for demand response and peak control)
+
+viii.	Rising energy costs (related to rising oil prices and security of supply)
+
+ix.	Conservation (of the need to conserve the planet’s limited sources of energy)
+
+x.	Mass electrification (meeting increasing demands on electricity)
+
+xi.	Renewable energy (integration of renewable sources of energy into the grid)
+
+xii.	Green energy (minimizing the industry’s carbon footprint)
+
+
+As emphasized, the stakeholder community has long come to the realization that the above challenges can not be addressed within the confines of the legacy grid. In other words, at the core of the current crisis is the inability of the legacy electrical grid to respond to such challenges without major technological overhaul of its infrastructure, systems and components.
+
+
+The problem however is not proving that an overhaul of the grid is a necessity. That is almost an undisputable given or fact. The stakeholders, including the utility companies, governments and the public have come to the conclusion that such a transition from legacy grid to Smart
+ 
+Grid is not only necessary, but it is vital to sustain and promote economic growth and quality of life in the new millennia. The issue rather is how to overhaul the system, without impacting the critical services that it is currently providing for the larger population. The analogy of building a race car, while competing in an actual race does not seem far-fetched.
+
+
+In other words, the need to modernize the system, add new components, sub-systems and operational technologies without having any adverse impact on its day to day operation seems to be impossible. What accentuates the problem is the realization of the fact that most utility companies, if not all, are cash strapped and not in a position to commit to large expenditures in this area without justifying immediate paybacks in terms of additional revenues or services.
+
+
+To complicate the matter further, one should also note that the absence of mature technologies, protocols and standards in the Smart Grid sector is certainly not helping the situation. The fact of the matter is that the majority of technologies advocated for use in Smart Grid, including IT and Communication technologies, have their roots elsewhere in the industry. These were designed in a different era, and with different applications, specifications and reliability requirements in mind. To port those technologies over into the Smart Grid sector amounts to almost re-purposing and/or re-development of such technologies. And with re-development, comes the issue of validation and qualification of these new and improved (or repurposed) technologies. And that is another major issue involved in further development of Smart Grid, which is how can such technologies be validated and/or qualified as “utility-grid ready” without incorporating these in actual utility-
+ 
+scale networks. Can utilities take the risk of adopting such technologies based on test-bench or lab validations? Those are further inhibitors which slow down the desired transition from the legacy grid to Smart Grid.
+
+
+1.3.	Stakeholders and Partnerships
+
+In July 2008, the Government of British Columbia in Canada, thru its ICE (Innovative Clean Energy) fund provided funding to a consortium of Canadian companies, led by the British Columbia Institute of Technology (BCIT), to set up Canada’s very first Smart Microgrid on the Burnaby campus of BCIT. In November 2009, the Government of Canada through Western Diversification Fund, provided the project with matching fund for BC’s ICE Fund. The project received further investments from CanmetENERGY-NRCan and from BC Hydro.
+
+
+At an overall investment of more than $30M over 5 years, BCIT began the process of designing and developing a scaled-down version of the Smart Grid; i.e., a Smart Microgrid, to enable utility companies, technology providers and researchers from across Canada to work together to develop, test and qualify architectures, protocols, configurations and models of the evolving Intelligent Grid with the intention of charting a “path from lab to field” for innovative and cost effective technologies and solutions for North America’s evolving Smart Electricity Grid.
+
+
+BCIT’s Smart Microgrid was designed as an RD&D (Research, Development and Demonstration) platform where existing and future technologies in telecommunication, smart metering, cogeneration, smart distribution and intelligent appliances were employed to develop and qualify the most robust, cost-effective and scalable solutions required to facilitate and
+ 
+nurture the evolution and the emergence of the Smart Grid in one form or another.
+
+
+To widen private sector participation in the initiative, BCIT assembled a consortium of industry partners, referenced here as BMPIC (BCIT Microgrid Private Industry Consortium) to help with the design and implementation of BCIT’s Smart Microgrid. BMPIC, composed of local and international technology companies at the forefront of technology development in this field, covered a wide array of hardware, software and system technologies required for the realization of Smart Grid. The validation and qualification of architectures, models and protocols developed were guided, supervised and validated by partnering utility companies who acted as the end- customers of the developed technologies and solutions.
+
+
+Canada’s first Smart Microgrid infrastructure were implemented at BCIT’s Main Campus in Burnaby. It enabled high-tech companies, end customers and researchers to work together to develop and qualify various system architectures, configurations, interface protocols and grid designs to meet national and global priorities for co-generation, efficient transmission and distribution of electricity, load control, demand response, advanced metering and integration of clean energy sources into the existing and future grids.
+
+
+1.4.	RD&D Roadmap Design
+
+Utilities in North America have had their fair share of challenges in taking the first step on their path to Smart Grid, namely large roll-outs of Smart Metering projects across their distribution circuits. The reaction of the public to Utility Companies’ push to implement Smart Metering programs took many in the industry by surprise. In addition to consumer associations’ open call
+ 
+to disband the idea, many jurisdictions saw the introduction of symbolic resolutions, passed by county and municipal councils, banning Smart Meter installation. In response to such backlash from customers, many North American Utilities have had to either slow down Smart Metering roll-outs, or to devise opt-out programs, while investing in info-campaigns to reach their customers.
+
+
+Unrelated to the form or shape that consumer’s backlash manifested itself (e.g. complain about health effects of RF radiation, concerns over Privacy and Security of Customer Data, or perceived imminent rise in the cost of energy, etc), one could see that such concerns were primarily attributed to mis-information and an absence of buy-in for this new technology on the part of utility customers.
+
+
+What is interesting is that very few, if any, Utility attempted to answer the more fundamental question of why their customers should embrace this new technology with open arms. What was in this new technology for them to be a willing participant in this process? Would Smart Meters reduce utility bills? Would it provide customers with more reliable service? Would Smart Metering protect customers’ vital information and personal data? What would the short and long term impact of Smart Metering be on customer engagement? What is next after Smart Metering? What future functionalities and capabilities would be enabled through these Smart Meters which would be beneficial to customers?
+
+
+In fact, not only very little attempt was made to answer these valid questions adequately and convincingly, some utilities added fuel to the fire by suggesting that Smart Meters would help
+ 
+with “customer behavior change” or “Load Control” through ToU (Time of Use) and Dynamic Pricing. Such suggestions, without a well formulated plan to prove to customers that such behavior change would not, and should not happen at the cost of their convenience, or at their expense, reinforced public perceptions that Smart Metering was nothing but a quick money-grab exercise by cash-strapped utilities, trying to fill their budget holes at the cost of rate payers.
+
+
+The question that aroused here was why wouldn’t utilities confront such misconceptions head on and communicate with their customers the merits of Smart Metering? Why wouldn’t they portray Smart Metering as the first step towards Smart Grid Integration, and all the unprecedented capabilities that Smart Grid will afford their customers? Why wouldn’t they attempt to convince their customers that Smart Grid shall effectively empower them to be an active stakeholder and player in their energy/service transactions?
+
+
+Although there could be many reasons for such disconnect between utilities and their customers, some speculated that either utilities had not yet managed to develop the required Smart Grid Strategic Roadmap, or even if they did, there could have been very little consensus across their organizations on the Integration Plan and a realistic schedule required to implement it.
+Regardless of the root cause of this, the pundits saw this as Utilities’ failure to formulate the right communication plan to help their system, organization, staff, infrastructure, assets and ultimately customers navigate collectively, and as one, through this uncertain, yet exciting, transition towards a new set of service transactions, energy paradigms, and fundamentally different roles and responsibilities.
+ 
+It goes without saying that no utility has ever discounted the need for a Smart Grid Strategic Roadmap, and subsequently a Smart Grid Integration Map, prior to committing such large investments in their assets and infrastructure. Therefore, the question is not the existence of such blueprints, but simply their role in driving (and informing) the major technology investment commitments which utilities are making today. The litmus test for that is to ask a series of questions to ascertain how conducive each investment is towards a seamless transition from a less-intelligent grid to an “intelligently-integrated” Smart Grid.
+
+
+As discussed earlier, the need for the development of a strategic roadmap for Smart Grid was recognized early on by many practitioners and planners in the utility industry. Work began on identifying utility’s business and corporate objectives and goals, recognizing the most critical issues and impediments in reaching those goals and devising a plan on how to address them. Figure 3.1 depicts an early attempt by a group of experts from British Columbia Institute of Technology (BCIT) and BC Hydro, who worked collaboratively over a period of several months, to formulate an RD&D Roadmap for their joint Smart Microgrid Initiative on BCIT’s Burnaby Campus. This collaborative effort took into consideration what each party was hoping to achieve from the joint project, the modalities of their respective development efforts, the realities on the ground and the resources and technologies needed to achieve those goals over a 5 year period.
+ 
+
+
+
+
+As demonstrated in Figure 3.1, BCIT/BC Hydro Smart Microgrid Roadmap recognized the following 5 development streams across the full spectrum of the Microgrid initiative:
+
+
+Stream 1, Energy Management System (EMS): This stream aimed to develop successively evolving versions of an open architecture, standard compliant EMS tool with increasing functionality and features. Indicated as the “A” Stream, it aims to develop the following applications:
+A1: EMS Ver 1, with built-in static tariffs, utility portal and consumer portal.
+
+A2: Mobile EMS, with built-in static tariffs, scalable portals and mobile device dashboard technology.
+ 
+A3: EMS Ver 2, with dynamic tariffs, utility pricing signals and consumer initiated load shedding and scheduling.
+A4: EMS Ver 3, integrated with a Microgrid Controller, implementing a distributed command and control architecture.
+A5: Focused on the integration of renewable sources of energy (wind & solar) with local co-gen sources and develop solutions for energy storage, net metering, synchronization and protection/switching.
+A6: EMS Ver 4, capable of accommodating consumer choices of electrical power generation sources and implementation of various revenue models for energy transactions.
+
+
+Stream 2, Revenue Data Exchange: This stream developed solutions for revenue data capture and aggregation over a Wireless Local Area Network, compliant with ANSI-C12. 19. Indicated as the “B” Stream, it incorporated the following activities:
+B1: LAN Network, consisting of Zigbee Network with Smart Energy Profile and MODBUS termination/integration.
+B2: Ongoing project with NRCan, aiming at initiating and broadcasting utility pricing signals across the distribution network based on ToU and Maximum Demand/load considerations.
+
+
+Stream 3, Microgrid Automation System: This stream aimed to integrate HAN, LAN and WAN networks into an end-to-end command & control system. Indicated as the “C” Stream, it attempts to develop the following:
+C1: Advanced Metering Infrastructure, consisting of PLC and RF equipped Smart Meters, retrofitted to become compliant with ANSI C12.22.
+ 
+C2: Home Area Network, consisting of load control devices for hot water tanks and baseboard heaters, as well as Zigbee sensors, thermostats and in-home displays (IHD).
+C3: WiMax Network (1.8 GHz), consisting of base stations and WiMax clients to be installed on campus substations to gather real-time data from the health and conditions of campus electrical assets.
+C4: Distribution Automation, focusing on upgrading and equipping BCIT’s substations with remote monitoring and control gears and sensors. WiMax clients were required to facilitate full real-time visibility over the operation of BCIT’s substations.
+C5: Development of a Microgrid Asset Management tool, integrating intuitive dashboard technology for asset maintenance and control.
+Stream 4, Intelligent Transportation System: This stream focused on the development and integration of charging infrastructure for Electric Vehicles. Indicated as the “D” Stream, it aimed to develop the following application:
+D1: Electric Vehicle charge infrastructure, allowing grid-to-vehicle and vehicle-to-grid modes of operation.
+
+
+Stream 5, Rural & DC Microgrids: This stream aimed to investigate the complexities associated with the design and realization of off-the-grid and rural Microgrids. Indicated as the “E” Stream, it aimed to develop the following applications:
+E1: Cost-effective rural Microgrid blueprint using DC as the backbone of electrical distribution and consumption.
+
+
+Furthermore, each stream aimed to validate the developed solutions through a real-life extensive
+ 
+pilot. Five pilots were planned:
+
+
+Pilot 1, Residence Competition: The presence of a LAN network, together with our EMS Ver 1, allowed us to hold a competition among our residences, encouraging students to conserve energy. The competition was successful and was widely covered in the media. This pilot aimed to log and document end-customer’s experiences with Energy Management Systems and understand social science factors which needed to be considered in the design of EMS systems. Such pilots need to be repeated with EMS Ver 2 and Mobile EMS Ver 1.
+
+
+Pilot 2, Demand Side Management: With the aid of a fully integrated end-to-end energy management system, an EMS Ver 3 pilot was planned with the intention of logging and documenting end-customer’s experiences with an Energy Management System which may be perceived as intrusive. We needed to understand the social science factors which should be considered in designing an EMS system which may be allowed by the consumer to go beyond the smart meter and attempt to control pre-determined appliances at home.
+
+
+Pilot 3, EV Charge Pilot: Having a network of smart meters at the charging points for EV on the campus allowed us to determine end customer experiences and use patterns of electric vehicles, as well as the complexities involved in predicting and profiling mobile loads of this nature.
+
+
+Pilot 4, Rural & DC Microgrids: Given the fact that access to rural communities would have been difficult in the early stages of this development, we planned to convert a single building on
+ 
+the campus as a DC Nanogrid and understand the issues involved in DC Distribution Networks, Protection and Switching. Subsequently, we planned to leverage the accumulated knowledge on DC grids and expand the pilot to a real completely off-the-grid rural community.
+
+
+Pilot 5, BCIT as an Island-able Independent Power producer (IPP): This was planned as a comprehensive pilot whereby all the know-how, components and solutions developed around the campus Microgrid could be put to test thru EMS Ver 4. Important issues for IPP’s such as Net Metering, Protection, Switching, Synchronization and the economics of running a successful IPP could be examined and investigated.
+
+
+As Fig 3.1 demonstrates, the roadmap highlighted the need for several constituent streams, each informing as well as enabling the other streams along the way. For example, the EMS (Energy Management System stream) included several layers of sophistication (and therefore features), based on the availability of certain assets and capabilities provided by other parallel streams, such as AMI, Communication Infrastructure and Load/Asset Management. The interplay between these functionalities, made possible by the integration of their respective technologies would enable stepwise jumps in the range of capabilities which the initiative was expected to provide.
+
+
+BCIT/BC-Hydro’s Smart Microgrid initiative reinforced the notion that Smart Grid Integration consisted of several concurrent streams, designed to introduce intelligence (and thereby command and control) into strategic areas of the system, providing capabilities and functionalities which transcends the silo legacy architecture of the system. The nature of these
+ 
+capabilities and their intended reach would determine which assets and/or subsystems have to be integrated to materialize the target functionality.
+
+
+By default, Smart Grid Integration does not always have to be end-to-end for ALL capabilities. Different Smart Grid functions require different assets to be integrated, with different capabilities and different requirements. As such, Smart Grid Integration Map has to closely follow Utility’s Strategic Roadmap, and the intended Smart Grid functionalities which need to be enabled in each stage of the development.
+
+
+In practice however, Smart Grid Integration has taken many twists and turns. It is doubtful that North American utilities would follow similar modalities and approaches for Smart Grid Integration. Rather, it is logical to assume that each utility has taken a different path towards implementing their Smart Grid plans.
+
+
+Given the fact that the electricity distribution network in almost all jurisdictions across North America had long been overdue for a major overhaul, Utilities’ first step in Smart Grid Integration began with limited roll-outs of “one-way” Automated Meter Reading (AMR), followed by major investments in “two-way” Advanced Metering Infrastructure (AMI). As discussed, the overwhelming justification for investments in AMI was its enabling role in facilitating the move towards eventual realization of Smart Grid functions. That understanding convinced many utilities in North America to plan for major Smart Metering investments. Many projects were announced, and pilots sprang up across the continent. And in the absence of a well formulated Smart Grid Integration plan, specifying how Smart Metering would lead to Smart
+ 
+Grid, pilot project evaluations focused on the requirements for Smart Metering, rather than on its forward compliance with future Smart Grid functions, and as such most pilots were perceived to be “successful”, resulting in substantial investments in Smart Metering projects.
+
+
+However, as the full cost of ownership of AMI systems became clear, and given the regulatory constraints, and in the absence of clear revenue models, utilities found it increasingly difficult to justify AMI capital expenditure. Added to less than convincing cost-benefit models for AMI, consumers’ backlash against Smart Metering slowed down AMI rollouts in many jurisdictions across North America. The absence of clear Smart Grid roadmaps, and Utilities’ less-than- convincing arguments in favor of Smart Metering prompted many experts in the field to express doubts about AMI rational, questioning whether or not Smart Grid was being integrated backwards. Some suggested that Return on Investments would be more palatable if Distribution Substations were automated first. Others pointed to the need to start right at the top, upgrading Utility’s enterprise applications in the back-office and on the enterprise bus before attempting to invest at the bottom of the chain.
+
+
+The fact of the matter was that all those questions were quite valid. And the reason why such doubts were being expressed was the absence of Utility’s Smart Grid Integration Map, demonstrating how Advanced Metering Infrastructure was going to be leveraged to gradually upgrade the functional capabilities of the grid. The January 2010 issue of IEEE’s PES magazine featured an early attempt to demonstrate linkages between technologies and capabilities along the path from Smart Metering to Smart Grid. That stipulation, captured in the previous chapter, argued that AMI would have to be perceived as an enabling platform for two-way
+ 
+communication and distributed command and control among all previously “unmonitored and uncontrolled” components of the distribution system. It further emphasized that the protocols, topology and architecture of AMI systems had to be designed as a forward looking source of sensory/status/alarm information capable of allowing future (and yet to be developed) smart grid capabilities to reach (and integrated with) the downstream side of the utility system. In other words, the specification of the AMI system had to take into account the communication, data/command exchange and access requirements of future applications of Smart Grid.
+
+
+What this further demonstrated was the notion that Smart Grid Integration could be broadly divided into two categories; one that operate in local domains using global system attributes, such as Demand Response or Outage Detection, which require access to real-time local data with local analytics and local decision making processes; and another which operate over multiple domains, requiring wide-area situational data awareness, overview of the system constraints as a whole and its operational objectives, such as Management of Distributed Energy Resources,
+Self-Healing, Outage Prevention, etc. While the former group is enabled through a well-designed forward-looking AMI system with appropriate latency, throughput, availability and resilience requirements, the latter relies on well-designed and optimally-integrated network of distributed systems with suitable security, scalability and access protocol specification, enabling efficient distributed command and control through multi-layer, multi-tier and Multi Agent System.
+
+
+In other words, one needed to emphasize the fact that Smart Grid Integration is built upon forward-looking information, command & control architectures, capable of meeting the functional and operational requirements of a gradually evolving Smart Grid system, with
+ 
+incremental needs for higher levels of performance, scalability and resilience without the need for costly departures from its original design and implementation. It goes without saying that once in place, the utilities would find it almost impossible to undo their committed investments (AMI, Substation Automation, etc) and upgrade their assets to enable new Smart Grid functionalities. And that would mean that the cost and the pain associated with the transition from legacy grid to Smart Grid would to a large extent be dependent on the suitability of Utility’s Smart Grid Integration Map to support that transition.
+
+
+The irony is that there is an element of truth in every approach which has been put forward on how to build a Smarter Grid. This diversity of views could only be attributed to the fact that without a doubt there is more than one way to integrate a Smarter Grid. Depending on a variety of potentially conflicting, and yet interacting, drivers (priorities, regulations, legacy assets, organizational/process issues, etc) different utilities may choose different points of departure on their long journey towards Smart Grid. And consequently, the trajectory which each Utility may take in integrating their system with different Smart Grid functionalities, even if similar starting points are adopted, may prove to be quite unique, and dissimilar compared to others.
+
+
+However, regardless of where that starting point is, it is crucial for Utilities to spec out their journey (as much as they possibly could, given all the unknowns) in such a way that subsequent moves towards other areas of the system could be realized seamlessly and without the need to “substantially” change/upgrade the assets which are already rolled-out. As an example, if after AMI roll out the plan is to take Substation Automation as the next area for investment, the Utility should ensure that subsequent downstream moves to implement Demand Curtailment or Load
+ 
+Shedding, as well as upstream moves to implement Asset Management or Self-Healing, could be realized without having to change or upgrade the investments incurred for Substation Automation and AMI.
+
+
+Moreover, the extent to which the specifications of various parts of the system need to be taken into account to ensure seamless integration of components, assets and functions in both spatial and temporal domains. It emphasizes the notion that the sphere of influence of Smart Grid capabilities varies considerably across different functions. Some span through upstream layers of the system, involving enterprise functions, utility operations and revenue management (e.g.
+Contingency Management, Asset Management, Energy Market Participation, etc), while others traverse through local downstream layers of the system, involving field and Prosumer-facing assets (e.g. Demand Response, Load Management, etc). It is the latter group which places a heavy burden on the AMI system as it requires close integration and tight operational linkages to AMI system components, protocols and technologies. A poorly designed and implemented AMI system would prove to be inhibitive for the efficient implementation and/or correct operation of such downstream Smart Grid functions.
+
+
+1.5.	Microgrid Implementation
+
+Like any other Strategic Planning Document, Smart Grid Roadmap has to be regarded as a living document; subject to change, modifications and improvements. By default such long term plans determine one’s immediate actions, while being informed by the results of the actions competed. In our case, the first two years of the implementation went according to the plan. However, at the start of the 3rd year, discussions between BCIT and BC Hydro pointed to the need to move the
+ 
+integration of Electric Vehicle Charging Stations with the Microgrid from Year 4 to Year 3. Moreover, the decision was made to push out DC Microgrid indefinitely as our technology partners and end customers were as of yet unwilling to commit to R&D investments in this area.
+
+
+Other than those two changes, BCIT/BC-Hydro Smart Microgrid RD&D Roadmap was successfully completed with the completion of the OASIS sub-system which combined the last two major tasks of setting up an Island-able Microgrid with EV Charging Stations as some of the loads it would serve. It should also be noted that the project completed by the end of 2014, rather than its completion target of the end of 2013.
+
+
+BCIT’s Burnaby Campus, upon which the RD&D Roadmap was implemented is one of the largest post-secondary academic campuses in Vancouver. As Figure 3.2 shows, BCIT’s Burnaby
+ 
+Campus resembles a small neighborhood, containing over 50 buildings, tucked between Canada Way to the North and Deer Lake Parkway to the South. The campus houses classrooms, administration buildings, workshops, food outlets, student services and dormitories.
+
+
+The sheer size and the diversity of activities required BCIT’s Burnaby Campus to cater to a variety of different electricity consumption profiles ranging from heavy industrial machinery for instructional purposes in the workshops, to office type consumption in classrooms along with a residential-type profile in dormitories. This Microgrid enables utility providers, technology providers and researchers to work together to facilitate the commercialization of architectures, protocols, configurations and models of the evolving Smart Grid. The ultimate goal is charting a “path from lab to field” for innovative and cost-effective technologies and solutions for Canada’s evolving Smart Electricity Grid.
+
+
+BCIT’s Smart Microgrid is a test bed where communication technologies (RF & PLC), smart metering (1P & 3P), co-generation (thermal turbine, solar and wind) and smart appliances are integrated to qualify the merits of different solutions, showcase the capabilities, and accelerate the commercialization of locally developed technologies and solutions for the Smart Grid.
+
+
+BCIT’s Smart Microgrid is constructed using locally developed technologies, components and devices supplied by Canadian Technology companies. The validation and qualification of architectures, models and protocols is guided, supervised and scrutinized by BC Hydro and other Canadian utility companies.
+ 
+BCIT’s Smart Microgrid enables Canadian high-tech companies, Canadian end customers and Canadian engineers to work together and verify various system architectures, configurations, interface protocols and grid designs to meet Canada’s priorities for co-generation, efficient transmission and distribution of electricity, load control, demand response, advanced metering and integration of clean energy sources into the existing and future grids. BCIT’s Smart Microgrid helps utility companies, such as BC Hydro, to qualify technologies for remote monitoring and control of co-gen plants in terms of their carbon footprint, output quality and efficiency.
+
+
+It is also important to note that the utility industry is no longer interested in experimenting with end-to-end “proprietary” technologies and solutions supplied by a single company. Utilities continue to have painful memories of being constrained by proprietary solutions supplied by large monopoly companies, constraining the pace and scope of technical innovations to what such vendors chose to supply. Utilities would like to see Smart Grid RD&D centers to be built with an open topology and architecture, using the most innovative, cost-effective and standardized technologies available in the open market.
+
+
+As such, BCIT’s Smart Microgrid is built with a forward looking open and non-proprietary architecture, using the best of the breed technologies available from Canadian and international high-tech companies. For instance, the current Advanced Metering Infrastructure built on BCIT Campus utilizes Smart Metering technologies from different vendors.
+
+
+BCIT’s Smart Microgrid also enables First Nations and other remote communities in Canada to
+ 
+become power producers leveraging the available renewable sources of energy (e.g. run-of-the- river, solar, wind, beetle-infested timber, etc) and to operate such plants with acceptable environmental and commercial standards.
+
+
+In addition to helping Canadian power industry to begin to address some of Canada’s clean energy priorities, BCIT’s Smart Microgrid helps Canadian High Tech companies to demonstrate and showcase the capabilities of their technologies and solutions to end customers and open up the North American and International markets to Canadian made technologies.
+
+
+Key deliverables of this project over its three consecutive phases are the following:
+
+i.	Construction of a smart Microgrid test bed to verify:
+
+a.	provisioning methods for smart termination points (meters, data aggregators, appliances, sensors, controls, etc)
+b.	innovative electrical distribution system including smart substations
+
+c.	innovative network architecture and topology for smart grid
+
+
+ii.	Operational analysis and qualification of Microgrid’s:
+
+a.	resilience, reliability, security and scalability
+
+b.	data collection and distributed command and control methods
+
+c.	consumer behaviour and their participation in energy conservation efforts
+
+
+iii.	Qualification of interface protocols and models to ensure:
+
+a.	interface with Utility back-office tools (billing, load management, service provisioning,
+ 
+outage restoration, etc)
+
+b.	seamless end-to-end deployment, operation and maintenance
+
+c.	easy and intuitive human interface for operators and customers
+
+
+The sheer size and the diversity of activities requires BCIT’s Burnaby Campus to cater to a variety of different electricity consumption profiles ranging from heavy industrial machinery for instructional purposes in the workshops, to office type consumption in classrooms along with a residential-type profile in dormitories.
+
+
+In addition to such diverse usage patterns, the campus includes co-generation power plants. There is an existing Photovoltaic Tower, capable of generating up to 8KW of electricity, as well as three smaller PV systems elsewhere on the campus with a total generation capacity of around 14KW. Newer PV modules are also installed on the roof of BCIT’s new Gateway Building.
+These new Solar Modules are capable of generating 17KW of power for the campus. A Co-Gen plant, consisting of a multi-fuel boiler and turbine, capable of delivering 250KW of power has already been installed on the campus. Furthermore, one vertical axis wind turbine, capable of generating 5KW of power has been installed near one of the central buildings. Last but not least, 250KW of Solar Canopies, feeding into 500KWhr of Lithium Ion Battery Storage have been installed on one of the large parking lots on the campus.
+ 
+
+
+As shown in Figure 3.3, BCIT’s Smart Microgrid is an integration of four entities; Co-Gen Plants, Campus Loads, Meshed Network and Core Intelligence.
+
+
+Co-Gen Plants:
+
+a.	Intelligent Thermal Turbine:
+
+A key component of BCIT’s Smart Microgrid is its Intelligent Thermal Turbine. The plant allows smart sensors to monitor the load demand to bring the co-gen plant online to supply part of the required power to the BCIT Microgrid during peak consumption periods. The co-gen control system is equipped with smart sensors, integrated with the BCIT Microgrid’s Core Intelligence to achieve the desired system response. The nominal capacity of this plant is 250KW.
+ 
+
+
+
+
+
+
+b.	Solar Photovoltaic Stations:
+
+The BCIT Burnaby Campus is already equipped with four solar photovoltaic co-gen systems. An 8-kW grid-tied PV tower is located at the east side of the campus (in front of Building SE1). This tower has four sides, each with 2-kW PV capacity. Inverter and monitoring systems are installed inside the tower. Interfaces to monitor the energy production are available as well. A 2- kW grid-tied PV system is installed on the east roof side of the AFRESH home, located at the north side of the campus (next to Building NE3). It generates electricity for the AFRESH building. AFRESH is an acronym for Accessible & Affordable, Flexible, Resilient, Energy Efficient, Sustainable, and Healthy. Shown in Figure 3.4, AFRESH home is a housing demonstration project built on BCIT campus. AFRESH’s energy efficient features include a
+ 
+solar installation, geothermal (geo-exchange) heating, a fuel cell, smart meters, plug-in hybrid / electric vehicle charging stations, and inverter, storage, and control installation. Moreover, two
+1.4 kW grid-tied PV systems, as a curtain-wall, are installed on the facade of Technology Place (Building SE 19), a multi-tenant building owned and operated by Discovery Parks, that is located on the BCIT Campus. The fourth photovoltaic system is a 1-kW grid-tied PV system installed on Building NE25.
+As mentioned, 250KW of PV canopies is installed on Parking Lot 7, feeding into a 500KWhr storage and Power Conversion Systems (PCS). The output (measured in real-time by our EMS tool hauling the data from their attached Net Meters) is fed into one of the distribution substations nearby. Moreover, the output of the PCS also drives a number of local EV charging Stations, as well as other shed-able loads.
+Planned Islanding is demonstrated by enabling the EV Charging Station to operate fully detached from BC Hydro using the Lithium Ion battery pack. The batteries could be charged from BC Hydro feeder to a maximum charge of not exceeding the total amount of electricity generated by all PV modules across the campus.
+This setup has enabled us to demonstrate the viability of load shifting through the utilization of renewable sources of energy meeting the incremental load placed on the grid by up and coming applications such as EV Charging stations.
+Wind Turbine:
+
+As previously discussed, a vertical axis wind turbine is installed next to AFRESH home It feeds its output into AFRESH’s circuits through a local panel and some led-acid battery pack.
+Campus Loads:
+
+Four different buildings, with a variety of consumption profiles, were selected to be equipped
+ 
+with smart terminations.
+
+I.	The BCIT Machine Shop houses large CNC machines and heavy equipment mainly used for instructional purposes.
+II.	The BCIT Welding Shop contains numerous transformers and welding equipment, used for training.
+III.	Building NE1 contains several circuits supplying classrooms, cafeterias, offices, etc. (4) Residences are BCIT Student dormitories.
+IV.	Campus loads provide a rich set of service profiles prevalent in most urban settings. We have particularly focused on the power usage pattern, frequency, types of loads and applications which these buildings provide.
+
+
+
+Meshed Network:
+
+Shown in Figure 3.5, the BCIT Smart Microgrid Network integrates the following 7 components:
+ 
+a.	Smart Meters, are capable of measuring multitudes of consumption parameters (e.g. active power, reactive power, voltage, current, demand, etc) with acceptable precision and accuracy. Smart Meters are chosen to be tamper-proof and capable of storing the required data for a number of billing cycles. These meters are supplied by a wide variety of different manufacturers.
+b.	Smart Displays, are capable of measuring consumption profiles and displaying that in an easy-to-understand form with end-customers.
+c.	Communication Modules, enable each meter to communicate with its adjacent meters, or with mobile/stationary data aggregators. Communication technologies such as low-cost. RF, PLC and Zigbee have been used.
+d.	Access and Networking Middleware, allows the setup and management of a secure meshed network comprising smart components in the same neighborhood, together with their assigned data aggregator.
+e.	Data Aggregator Unit (DAU), capable of exerting command and control over a meshed network of slave meters. The Aggregator is capable of accessing each and every node in its assigned network.
+f.	Smart Appliances Control, capable of exerting command and control over Smart Appliances to adjust/control their performance and service level based on user and/or utility requirements.
+g.	Aggregator Application Software, which allows authentication and hand-shake with each node in the network. It is capable of identifying each termination, querying them, exchanging data and command with them and storing the collected data for scheduled and/or on-demand transfer to Utility Servers.
+ 
+
+
+BCIT’s Smart Microgrid adopts an open architecture to allow experimentation and adoption of other transport technologies as and when they become available.
+Core Intelligence:
+
+
+BCIT’s Microgrid Control Center (MCC) enables Data Aggregators to be networked with the utility control centers in a variety of different configurations, network topology and architectures. The WAN (Wide Area Network) is emulated using BCIT’s MCC’s routers, switches, firewalls and servers. MCC’s Servers are equipped with a selection of back-office utility tools to communicate with data aggregators, exchange command/control data and act as an interface between Smart Grid and Utilities’ back-office software tools such as billing and accounting.
+This test bed set up enables technology providers to demonstrate the capabilities of their products. It also helps utilities to experiment with various architectures, configurations and protocols and see how a larger system can be constructed using such technologies. With this self- contained power grid we can demonstrate how to effectively setup and operate a large-scale Smart Power Grid to help better conserve and control energy usage across B.C and Canada.
+
+
+The system is designed in such a way as to:
+
+•	Ensure the integrity of time-sensitive data (event based and/or schedule based)
+
+•	Ensure the reliability and security of communication channels
+
+•	Parse data and make sense of what is important (which needs immediate attention) and what is not (which will be used for statistical reporting and archiving)
+•	Mirror critical databases of substations
+ 
+•	Present data in a useful and visual way (graphical outputs, interactive, query-based)
+
+•	Develop predictive models of events and real-time responses
+
+•	Manage distributed control to prevent cascading failures, or for the graceful degradation of user services based on service priorities
+•	Real-time wide-area control to manage generation and prevent over-provisioning
+
+•	Have context-dependent models and control of components to achieve robustness, fault- tolerance, or graceful performance degradation
+•	Verify and qualify large-scale distributed real-time embedded systems
+
+•	Develop support for integration and control of alternative and co-generation plants To achieve each of the above objectives, we worked with our partners to arrive at the most
+suitable system architecture and topology. In doing so, we were guided by the requirements and constraints specified by our end-customers, such as BC Hydro. Also, to be as cross-platform agnostic as possible, we use Java as our main development language.
+ 
+
+
+
+
+The rest of this book will delve into individual components of BCIT’s Microgrid. As Figure 3.6 demonstrates, we have come a long way in meeting the targets and deliverables set by our roadmap (refer to Fig 3.1). Given the fact that roadmaps are generally statements of intents, desires and plans, it is remarkable that what was designed, built and commissioned bears a close resemblance to the picture that our roadmap painted early in the process. A detailed comparison between our early understandings of what was needed to be done in 2007 to what was ultimately achieved in 2015, is a testimony to the time well spent in achieving consensus across the board, and involving all stakeholders, to ensure that what was designed stayed relevant to the needs and priorities of the community of stakeholders. Close collaboration with the industry ensured that BCIT’s Microgrid design team understood the industry priorities by trying to push the envelope
+ 
+in terms of the development of approaches, technologies and solutions which addressed the critical issues which the sector as a whole was facing.
+
+
+Nevertheless, our work is far from over. What has so far been done is simply a baseline for the design of a Microgrid. The design team appreciates the fact that microgrids are not projects; they have a beginning but no end. Microgrids should be regarded as an ongoing initiative, focused on constantly raising the bar and pushing the envelope on energy conservation, sustainable development, energy workforce training & education and last but not least minimizing campus’s carbon footprint.
